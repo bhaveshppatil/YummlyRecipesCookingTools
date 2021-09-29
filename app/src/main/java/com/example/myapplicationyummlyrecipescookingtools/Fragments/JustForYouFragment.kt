@@ -72,10 +72,8 @@ class JustForYouFragment : Fragment(R.layout.fragment_just_for_you), CLickListen
 
 
     override fun onReceipeClick(receipeModel: ReceipeModel) {
-        TODO("Not yet implemented")
     }
 
     override fun onArticleClick(articlesModel: ArticlesModel) {
-        TODO("Not yet implemented")
     }
 }
