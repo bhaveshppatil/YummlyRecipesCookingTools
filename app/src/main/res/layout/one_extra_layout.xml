@@ -156,7 +156,7 @@
         android:layout_marginStart="10dp"/>
     <View
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:layout_margin="20dp"
         android:id="@+id/viewMoreView"
         app:layout_constraintStart_toStartOf="parent"
@@ -170,7 +170,7 @@
         app:layout_constraintTop_toTopOf="@+id/viewMoreView"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="13dp"
         android:layout_marginStart="120dp"/>
     <TextView
         android:layout_width="wrap_content"
@@ -183,14 +183,28 @@
         android:layout_margin="20dp"
         android:id="@+id/txtNutrition"
         android:textSize="20dp"/>
+
     <ImageView
         android:layout_width="20dp"
         android:layout_height="20dp"
         app:srcCompat="@drawable/ic_open_lock"
         app:layout_constraintStart_toEndOf="@+id/txtNutrition"
         app:layout_constraintTop_toBottomOf="@+id/viewMoreView"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="200dp"/>
+        android:layout_marginTop="25dp"
+        android:id="@+id/openLock"
+        android:layout_marginStart="150dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View More"
+        android:textSize="13dp"
+        android:textColor="#338D6A"
+        app:layout_constraintStart_toEndOf="@+id/openLock"
+        app:layout_constraintTop_toBottomOf="@+id/viewMoreView"
+        android:layout_marginTop="27dp"
+        android:layout_marginStart="5dp"
+        android:textStyle="bold"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -199,6 +213,193 @@
         app:layout_constraintTop_toBottomOf="@+id/txtNutrition"
         android:layout_marginStart="20dp"
        android:textSize="15dp"
+        android:id="@+id/txtSubscription"
         android:layout_marginTop="10dp"/>
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtSubscription">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <View
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/circleCalories"
+            android:background="@drawable/circle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   140\nCalories"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/circleCalories"
+                app:layout_constraintTop_toTopOf="@+id/circleCalories"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="25dp"/>
+            <View
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/circleSodium"
+                android:background="@drawable/circle"
+                app:layout_constraintStart_toEndOf="@+id/circleCalories"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_lock"
+                app:layout_constraintStart_toStartOf="@+id/circleSodium"
+                app:layout_constraintTop_toTopOf="@+id/circleSodium"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="27dp"
+                android:id="@+id/sodiumLock"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SODIUM"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/circleSodium"
+                app:layout_constraintTop_toBottomOf="@+id/sodiumLock"
+                android:layout_marginStart="25dp"/>
+            <View
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/circleFat"
+                android:background="@drawable/circle"
+                app:layout_constraintStart_toEndOf="@+id/circleSodium"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_lock"
+                app:layout_constraintStart_toStartOf="@+id/circleFat"
+                app:layout_constraintTop_toTopOf="@+id/circleFat"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="27dp"
+                android:id="@+id/fatLock"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAT"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/circleFat"
+                app:layout_constraintTop_toBottomOf="@+id/fatLock"
+                android:layout_marginStart="37dp"/>
+            <View
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/circleCarbs"
+                android:background="@drawable/circle"
+                app:layout_constraintStart_toEndOf="@+id/circleFat"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_lock"
+                app:layout_constraintStart_toStartOf="@+id/circleCarbs"
+                app:layout_constraintTop_toTopOf="@+id/circleCarbs"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="27dp"
+                android:id="@+id/carbsLock"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CARBS"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/circleCarbs"
+                app:layout_constraintTop_toBottomOf="@+id/carbsLock"
+                android:layout_marginStart="28dp"/>
+            <View
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/circleFiber"
+                android:background="@drawable/circle"
+                app:layout_constraintStart_toEndOf="@+id/circleCarbs"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_lock"
+                app:layout_constraintStart_toStartOf="@+id/circleFiber"
+                app:layout_constraintTop_toTopOf="@+id/circleFiber"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="27dp"
+                android:id="@+id/fiberLock"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FIBER"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/circleFiber"
+                app:layout_constraintTop_toBottomOf="@+id/fiberLock"
+                android:layout_marginStart="31dp"/>
+            <View
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/circlePotassium"
+                android:background="@drawable/circle"
+                app:layout_constraintStart_toEndOf="@+id/circleFiber"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="20dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_lock"
+                app:layout_constraintStart_toStartOf="@+id/circlePotassium"
+                app:layout_constraintTop_toTopOf="@+id/circlePotassium"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="27dp"
+                android:id="@+id/potassiumLock"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="POTASSIUM"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/circlePotassium"
+                app:layout_constraintTop_toBottomOf="@+id/potassiumLock"
+                android:layout_marginStart="15dp"/>
+            <View
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/circleViewMore"
+                android:background="@drawable/black_circle"
+                app:layout_constraintStart_toEndOf="@+id/circlePotassium"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" VIEW\nMORE"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="32dp"
+                app:layout_constraintStart_toStartOf="@+id/circleViewMore"
+                app:layout_constraintTop_toTopOf="@+id/circleViewMore"
+                android:layout_marginStart="28dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
