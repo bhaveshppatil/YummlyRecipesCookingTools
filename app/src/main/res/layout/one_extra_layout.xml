@@ -220,6 +220,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="20dp"
+        android:id="@+id/horizontalViewForCircles"
         app:layout_constraintTop_toBottomOf="@+id/txtSubscription">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -399,6 +400,309 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </HorizontalScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Related"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:id="@+id/related"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalViewForCircles"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View More"
+        android:textSize="14dp"
+        android:textColor="#338D6A"
+        app:layout_constraintStart_toEndOf="@+id/related"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalViewForCircles"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="180dp"
+        android:textStyle="bold"/>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:id="@+id/relatedHorizontalView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/related">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:orientation="horizontal">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/chilirelleno"
+            app:strokeColor="@color/white"
+            app:strokeWidth="7dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/chilirelleno"
+            app:shapeAppearanceOverlay="@style/RoundImage"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chili Relleno\nCasserole"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:id="@+id/txtchili"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/chilirelleno"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="15dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/protienbowl"
+            app:shapeAppearanceOverlay="@style/RoundImage"
+            app:strokeColor="@color/white"
+            android:id="@+id/protienbowl"
+            app:layout_constraintStart_toEndOf="@+id/chilirelleno"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_goneMarginStart="20dp"
+            app:strokeWidth="7dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tempeh Protein\nBowl"
+                app:layout_constraintStart_toEndOf="@+id/chilirelleno"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_marginStart="25dp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/protienbowl"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="15dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/chickenbreast"
+            app:layout_constraintStart_toEndOf="@+id/protienbowl"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_goneMarginStart="20dp"
+            android:id="@+id/chickenbreast"
+            app:shapeAppearanceOverlay="@style/RoundImage"
+            app:strokeColor="@color/white"
+            app:strokeWidth="7dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tropical Beef\nChicken Breast"
+                app:layout_constraintStart_toEndOf="@+id/protienbowl"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_marginStart="25dp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/chickenbreast"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="15dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:id="@+id/beefrice"
+            android:src="@drawable/beefrice"
+            app:layout_constraintStart_toEndOf="@+id/chickenbreast"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_goneMarginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:shapeAppearanceOverlay="@style/RoundImage"
+            app:strokeColor="@color/white"
+            app:strokeWidth="7dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mongolian Beef\nSteamed Rice"
+                app:layout_constraintStart_toEndOf="@+id/chickenbreast"
+                android:textSize="17dp"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="25dp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/beefrice"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More From Pip and Ebby"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:id="@+id/pipAndEbby"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relatedHorizontalView"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View More"
+        android:textSize="14dp"
+        android:textColor="#338D6A"
+        app:layout_constraintStart_toEndOf="@+id/pipAndEbby"
+        app:layout_constraintTop_toBottomOf="@+id/relatedHorizontalView"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="30dp"
+        android:textStyle="bold"/>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:id="@+id/moreFromHorizontalView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pipAndEbby">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:orientation="horizontal">
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/greenjuice"
+                app:strokeColor="@color/white"
+                app:strokeWidth="7dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/greenJuice"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Green Juice"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/greenJuice"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="15dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/swipsteank"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                app:strokeColor="@color/white"
+                android:id="@+id/swipsteank"
+                app:layout_constraintStart_toEndOf="@+id/greenJuice"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_goneMarginStart="20dp"
+                app:strokeWidth="7dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country Swiss\nStreak !"
+                app:layout_constraintStart_toEndOf="@+id/greenJuice"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_marginStart="25dp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/swipsteank"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="15dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/cupcake"
+                app:layout_constraintStart_toEndOf="@+id/swipsteank"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_goneMarginStart="20dp"
+                android:id="@+id/cupCake"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                app:strokeColor="@color/white"
+                app:strokeWidth="7dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Queijadas\nCupCakes"
+                app:layout_constraintStart_toEndOf="@+id/swipsteank"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_marginStart="25dp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/cupCake"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="15dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:id="@+id/potatoes"
+                android:src="@drawable/grilledpotatoes"
+                app:layout_constraintStart_toEndOf="@+id/cupCake"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_goneMarginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                app:strokeColor="@color/white"
+                app:strokeWidth="7dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Racon Ranch\nGrilled Potatoes"
+                app:layout_constraintStart_toEndOf="@+id/cupCake"
+                android:textSize="17dp"
+                android:layout_marginEnd="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="25dp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/potatoes"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/ic_comment"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/problem"
+        app:layout_constraintTop_toBottomOf="@+id/moreFromHorizontalView"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See a problem? Let us know"
+        app:layout_constraintStart_toEndOf="@+id/problem"
+        app:layout_constraintTop_toBottomOf="@+id/moreFromHorizontalView"
+        android:layout_marginTop="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="20dp"/>
 
 
 

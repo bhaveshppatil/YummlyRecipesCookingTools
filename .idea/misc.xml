@@ -3,11 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/drawable/black_circle.xml" value="0.2203125" />
-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/drawable/circle.xml" value="0.2203125" />
-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_main.xml" value="0.12" />
-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/one_extra_layout.xml" value="0.31095890410958904" />
-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/recipe_layout.xml" value="1.2023026315789473" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/one_extra_layout.xml" value="0.18" />
       </map>
     </option>
   </component>
