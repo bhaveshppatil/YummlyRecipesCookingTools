@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "815547290442",
+    "project_id": "yummly-251d6",
+    "storage_bucket": "yummly-251d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815547290442:android:3b5f53f00aedf24acaa7b3",
+        "android_client_info": {
+          "package_name": "com.example.myapplicationyummlyrecipescookingtools"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815547290442-dufgphtii6542ko9m3jprqgpc9ome7mf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplicationyummlyrecipescookingtools",
+            "certificate_hash": "9557cd0ea9d3c4ad02d1d8fe8ae644ccdc410119"
+          }
+        },
+        {
+          "client_id": "815547290442-s6h25pfjmt0oefleqtg5b8qsglcb9e3v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkWCII1CmrhMItWqdvFlYibZatA2qOkbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "815547290442-s6h25pfjmt0oefleqtg5b8qsglcb9e3v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
