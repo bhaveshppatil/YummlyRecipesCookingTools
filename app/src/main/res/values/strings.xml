@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">My ApplicationYummly Recipes &amp; Cooking Tools</string>
+
+    <string name="facebook_app_id">376736487572437</string>
+    <string name="fb_login_protocol_scheme">fb376736487572437</string>
 </resources>
