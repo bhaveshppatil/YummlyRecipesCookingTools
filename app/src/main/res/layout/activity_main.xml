@@ -1,18 +1,575 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:scrollbars="none"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img"
+            android:id="@+id/imageRecipe"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:text="10 Ingredients |"
+            android:id="@+id/txtIngredients"
+            android:layout_marginTop="250dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/txtIngredients"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"
+            android:id="@+id/txtCalories"
+            android:layout_marginTop="250dp"
+            android:text="   1370 Calories   |"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="35 Minutes"
+            android:layout_marginTop="250dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@+id/txtCalories"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+
+            <ImageView
+                android:id="@+id/lock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageRecipe"
+                app:srcCompat="@drawable/ic_lock" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="23dp"
+                android:text="Add to Meal Plan"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/lock"
+                app:layout_constraintTop_toBottomOf="@+id/imageRecipe"/>
+
+            <TextView
+                android:id="@+id/ingredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:text="Ingredients"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lock" />
+
+            <ImageView
+                android:id="@+id/shoppingIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintStart_toEndOf="@+id/ingredients"
+                app:layout_constraintTop_toBottomOf="@+id/lock"
+                app:srcCompat="@drawable/ic_shopping" />
+
+            <TextView
+                android:id="@+id/shoppingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:text="SHOPPING"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@+id/ingredients"
+                app:layout_constraintTop_toBottomOf="@+id/shoppingIcon" />
+
+            <ImageView
+                android:id="@+id/shoppingBag"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintStart_toEndOf="@+id/shoppingIcon"
+                app:layout_constraintTop_toBottomOf="@+id/lock"
+                app:srcCompat="@drawable/ic_bag" />
+
+            <TextView
+                android:id="@+id/buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:text="BUY"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@+id/shoppingText"
+                app:layout_constraintTop_toBottomOf="@+id/shoppingBag" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="80dp"
+                android:text="4"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintStart_toEndOf="@+id/shoppingBag"
+                app:layout_constraintTop_toBottomOf="@+id/imageRecipe" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="SERVINGS"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                app:layout_constraintStart_toEndOf="@+id/buy"
+                app:layout_constraintTop_toBottomOf="@+id/shoppingBag" />
+
+            <ImageView
+                android:id="@+id/addToShopping"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ingredients"
+                app:srcCompat="@drawable/ic_add_shopping" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="33dp"
+                android:text="Add All to Shopping List"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/addToShopping"
+                app:layout_constraintTop_toBottomOf="@+id/ingredients" />
+
+            <View
+                android:id="@+id/shoppingListView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addToShopping" />
+
+            <ImageView
+                android:id="@+id/imageaddCupButter"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/shoppingListView"
+                app:srcCompat="@drawable/ic_add_item" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="13dp"
+                android:textColor="@color/black"
+                android:text="1/2 cup butter (softened)"
+                app:layout_constraintStart_toEndOf="@+id/imageaddCupButter"
+                app:layout_constraintTop_toBottomOf="@+id/shoppingListView" />
+
+            <View
+                android:id="@+id/cupButterView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageaddCupButter" />
+
+            <ImageView
+                android:id="@+id/imageAddCupSugar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cupButterView"
+                app:srcCompat="@drawable/ic_add_item" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="13dp"
+                android:text="1 cup sugar"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/imageAddCupSugar"
+                app:layout_constraintTop_toBottomOf="@+id/cupButterView" />
+
+            <View
+                android:id="@+id/sugarView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageAddCupSugar" />
+
+            <ImageView
+                android:id="@+id/imageAddEggs"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sugarView"
+                app:srcCompat="@drawable/ic_add_item" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="13dp"
+                android:text="2 Large eggs (beaten) "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/imageAddEggs"
+                app:layout_constraintTop_toBottomOf="@+id/sugarView" />
+
+            <View
+                android:id="@+id/milkView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageAddEggs" />
+
+            <ImageView
+                android:id="@+id/imageCupMilk"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/milkView"
+                app:srcCompat="@drawable/ic_add_item" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="13dp"
+                android:text="1/2 cup milk"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/imageCupMilk"
+                app:layout_constraintTop_toBottomOf="@+id/milkView" />
+
+            <View
+                android:id="@+id/floreView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageCupMilk" />
+
+            <ImageView
+                android:id="@+id/imageAddflour"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/floreView"
+                app:srcCompat="@drawable/ic_add_item" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="13dp"
+                android:text="2 cups flour(9 ounces)"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/imageAddflour"
+                app:layout_constraintTop_toBottomOf="@+id/floreView" />
+
+            <View
+                android:id="@+id/bakingView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/black"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageAddflour" />
+
+            <ImageView
+                android:id="@+id/imageAddBaking"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bakingView"
+                app:srcCompat="@drawable/ic_add_item" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="13dp"
+                android:text="2 tsp. backing powder"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/imageAddBaking"
+                app:layout_constraintTop_toBottomOf="@+id/bakingView" />
+
+            <View
+                android:id="@+id/waterView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageAddBaking" />
+
+            <ImageView
+                android:id="@+id/imageAddWater"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/waterView"
+                app:srcCompat="@drawable/ic_add_item" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="13dp"
+                android:text="2 cups of water"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toEndOf="@+id/imageAddWater"
+                app:layout_constraintTop_toBottomOf="@+id/waterView" />
+
+            <View
+                android:id="@+id/vanillaView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageAddWater" />
+
+            <ImageView
+                android:id="@+id/imageAddVanilla"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vanillaView"
+                app:srcCompat="@drawable/ic_add_item" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="13dp"
+                android:textColor="@color/black"
+                android:text="1/4 tsp. vanilla extract (for filling)"
+                app:layout_constraintStart_toEndOf="@+id/imageAddVanilla"
+                app:layout_constraintTop_toBottomOf="@+id/vanillaView" />
+            <View
+                android:id="@+id/saltView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageAddVanilla" />
+
+            <ImageView
+                android:id="@+id/imageAddSalt"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/saltView"
+                app:srcCompat="@drawable/ic_add_item" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="13dp"
+                android:textColor="@color/black"
+                android:text="1 pinch salt"
+                app:layout_constraintStart_toEndOf="@+id/imageAddSalt"
+                app:layout_constraintTop_toBottomOf="@+id/saltView" />
+            <View
+                android:id="@+id/powederedSugarView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageAddSalt" />
+
+            <ImageView
+                android:id="@+id/imageAddPowderedSugar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/powederedSugarView"
+                app:srcCompat="@drawable/ic_add_item" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="13dp"
+                android:textColor="@color/black"
+                android:text="1/2 cup powdered sugar(64 g, for crust)"
+                app:layout_constraintStart_toEndOf="@+id/imageAddPowderedSugar"
+                app:layout_constraintTop_toBottomOf="@+id/powederedSugarView" />
+            <View
+                android:id="@+id/parmesanCheeseView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageAddPowderedSugar" />
+
+            <ImageView
+                android:id="@+id/imageAddParmesanCheese"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/parmesanCheeseView"
+                app:srcCompat="@drawable/ic_add_item" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="13dp"
+                android:textColor="@color/black"
+                android:text="1/4 cup Parmesan Cheese(22 g)"
+                app:layout_constraintStart_toEndOf="@+id/imageAddParmesanCheese"
+                app:layout_constraintTop_toBottomOf="@+id/parmesanCheeseView" />
+            <View
+                android:id="@+id/mascarponeView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageAddParmesanCheese" />
+
+            <ImageView
+                android:id="@+id/imageAddMascarpone"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mascarponeView"
+                app:srcCompat="@drawable/ic_add_item" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="13dp"
+                android:textColor="@color/black"
+                android:text="1/4 cup mascarpone cheese (56 g)"
+                app:layout_constraintStart_toEndOf="@+id/imageAddMascarpone"
+                app:layout_constraintTop_toBottomOf="@+id/mascarponeView" />
+            <View
+                android:id="@+id/ExtraView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageAddMascarpone" />
+
+
+       <include layout="@layout/one_extra_layout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/ExtraView"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
