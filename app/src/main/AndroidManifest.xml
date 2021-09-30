@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplicationyummlyrecipescookingtools">
 
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <uses-permission android:name="android.permission.INTERNET"/>
+
 
     <application
         android:allowBackup="true"
@@ -29,6 +33,15 @@
             android:name=".RelatedActivity"
             android:exported="true" />
         <activity
+            android:name=".Activities.VegetarianActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.ReceipeDetails"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.HomeScreen"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true" />
         <activity
@@ -45,8 +58,14 @@
         </activity>
 
 
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+
         <meta-data android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id"/>
+
     </application>
 
 </manifest>

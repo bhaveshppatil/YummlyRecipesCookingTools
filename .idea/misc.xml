@@ -4,6 +4,29 @@
     <option name="filePathToZoomLevelMap">
       <map>
 
+        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_explore.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_home_screen.xml" value="0.2" />
+        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_just_for_you.xml" value="0.1" />
+        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_main.xml" value="0.2364102564102564" />
+        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_pro.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_receipe_details.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_vegetarian.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/articles_item_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_explore.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_just_for_you.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_premium.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_pro.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_search.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_thermometer.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/receipe_item_layout.xml" value="0.264" />
+        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/menu/bottom_menu.xml" value="0.2364102564102564" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+
+
         <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/one_extra_layout.xml" value="0.18" />
       </map>
@@ -18,6 +41,7 @@
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+
 
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

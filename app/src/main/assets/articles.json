@@ -1,0 +1,106 @@
+{
+  "Articles": [
+    {
+      "Images": "https://images.ctfassets.net/3vz37y2qhojh/5Sroa7GrJiGDOu7wbt17VG/e5691c49847fd91c4bac4c114fc8ef75/jamaican_jerk_chicken_hero.jpeg?w=927&fit=fill&fm=webp",
+      "ArticleName": "Dinner ",
+      "icon": "https://cdn-icons-png.flaticon.com/512/3304/3304671.png",
+      "count": "12 Receipe"
+    },
+    {
+      "Images": "https://images.ctfassets.net/3vz37y2qhojh/3f2jbgpffJ2W00LsdabGn5/21c89a1a40975764661d235fd5f0a53a/Bone_Broth_Hero_Horizontal_Cropped.jpg?w=927&fit=fill&fm=webp",
+      "ArticleName": "Healthy ",
+      "icon": "https://cdn-icons-png.flaticon.com/512/1147/1147832.png",
+      "count": "14 Receipe"
+    },
+    {
+      "Images": "https://images.ctfassets.net/3vz37y2qhojh/w97DWQHmAjOUtK4W2lBZu/0fcce95531f961fcb825375ace75ef56/Korean_Hot_Dogs_hero.jpg?w=927&fit=fill&fm=webp",
+      "ArticleName": "Easy ",
+      "icon": "https://image.flaticon.com/icons/png/512/617/617799.png",
+      "count": "10 Receipe"
+    },
+    {
+      "Images": "https://images.ctfassets.net/3vz37y2qhojh/2mReugyDa4Fkpjbn6zvy5r/5b7b4f2370caf44c1700cda5431c4ad4/Classic_Southern_Coleslaw_hero.jpg?w=927&fit=fill&fm=webp",
+      "ArticleName": "Summer ",
+      "icon": "https://image.flaticon.com/icons/png/512/1256/1256452.png",
+      "count": "13 Receipe"
+    },
+    {
+      "Images": "https://images.ctfassets.net/3vz37y2qhojh/7uW3KjdrwJ8jtasrIpeZ91/948a60a818de36cb449b7b60004fc934/Smoky_Tempeh_Black_Bean_Burgers_hero.jpg?w=927&fit=fill&fm=webp",
+      "ArticleName": "Vegetarian ",
+      "icon": "https://image.flaticon.com/icons/png/512/1257/1257664.png",
+      "count": "15 Receipe"
+    },
+    {
+      "Images": "https://images.ctfassets.net/3vz37y2qhojh/6DzD9rQKUMW16VwF0kMpSY/5ad50ba35e55fcf3a912c28a4c84d9fc/How_to_Make_the_Best_Homemade_Fish_Sticks_hero.jpg?w=927&fit=fill&fm=webp",
+      "ArticleName": "Kid Friendly",
+      "icon": "https://image.flaticon.com/icons/png/512/1141/1141061.png",
+      "count": "12 Receipe"
+    },
+    {
+      "Images": "https://images.ctfassets.net/3vz37y2qhojh/3KdSM403Bw8pF8NMgux46x/5f246cd8088206806d416a8afe1e867e/Dragon_Noodles_With_Crispy_Tofu_Hero_Cropped.jpg?w=927&fit=fill&fm=webp",
+      "ArticleName": "Meal Planning",
+      "icon": "https://image.flaticon.com/icons/png/512/1257/1257665.png",
+      "count": "10 Receipe"
+    },
+    {
+      "Images": "https://images.ctfassets.net/3vz37y2qhojh/3qNYyxqWFwVYgaH2bju4C1/84e832af97083bbf32dbfe44fef8ab24/Tips_and_Tricks_for_Freezing_Cookie_Dough_hero_cropped.jpg?w=927&fit=fill&fm=webp",
+      "ArticleName": "Cookies",
+      "icon": "https://cdn-icons-png.flaticon.com/512/164/164659.png",
+      "count": "11 Receipe"
+    },
+    {
+      "Images": "https://images.ctfassets.net/3vz37y2qhojh/5EJ1REvHcLFQfkOSsAxuS3/05ec924c27b9820ce14dde9337514a4f/_Indian__Spiced_Grilled_Chicken_with_Creamy_Raita_Hero.jpg?w=927&fit=fill&fm=webp",
+      "ArticleName": "Yummly Smart Thermometer",
+      "icon": "https://cdn-icons-png.flaticon.com/512/1684/1684375.png",
+      "count": "10 Receipe"
+    },
+    {
+      "Images": "https://images.ctfassets.net/3vz37y2qhojh/7kDe4JMnEkcn9rG1C7COkL/3e7055ee48afac7337121f85fde103fd/Crockpot-Mexican-Tortilla-Soup3_hero.jpg?w=927&fit=fill&fm=webp",
+      "ArticleName": "One Pot Meal",
+      "icon": "https://image.flaticon.com/icons/png/512/1257/1257263.png",
+      "count": "17 Receipe"
+    },
+    {
+      "Images": "https://images.ctfassets.net/3vz37y2qhojh/6GSEpMUBAuTlUQySr2Bw6q/bb64a47f52dbd412f688772647cbb4a4/Easy_Garlic-Herb_Baked_Salmon_Hero_cropped.jpg?w=927&fit=fill&fm=webp",
+      "ArticleName": "Low Carb",
+      "icon": "https://img-premium.flaticon.com/png/512/3475/premium/3475434.png?token=exp=1632905930~hmac=46699d732d3b3ab479737c65f8694346",
+      "count": "15 Receipe"
+    },
+    {
+      "Images": "https://images.ctfassets.net/3vz37y2qhojh/3f2jbgpffJ2W00LsdabGn5/21c89a1a40975764661d235fd5f0a53a/Bone_Broth_Hero_Horizontal_Cropped.jpg?w=927&fit=fill&fm=webp",
+      "ArticleName": "Slow Cooker",
+      "icon": "https://image.flaticon.com/icons/png/512/1249/1249672.png",
+      "count": "12 Receipe"
+    },
+    {
+      "Images": "https://images.ctfassets.net/3vz37y2qhojh/5ReMp5pE3wNBOweFOVg16r/87944b24c234c944e0e6b7ee72832376/classic_coffee_cake2_hero.jpeg?w=927&fit=fill&fm=webp",
+      "ArticleName": "Dessert ",
+      "icon": "https://cdn-icons-png.flaticon.com/512/2484/2484488.png",
+      "count": "14 Receipe"
+    },
+    {
+      "Images": "https://images.ctfassets.net/3vz37y2qhojh/45VV3qRhyCboKhBXczkS7D/9ff6aa05e1beed150d696528caae26bd/Yummly_Roast_Chicken_1_hero.jpg?w=927&fit=fill&fm=webp",
+      "ArticleName": "Chicken ",
+      "icon": "https://cdn-icons-png.flaticon.com/512/2884/2884591.png",
+      "count": "12 Receipe"
+    },
+    {
+      "Images": "https://images.ctfassets.net/3vz37y2qhojh/6s9ellKSzgYrdHTtVUm7n7/1b0192d45b47c4d2158531237e82d56d/Moroccan-Chickpea-Lentil-Soup_hero.jpeg?w=927&fit=fill&fm=webp",
+      "ArticleName": "Spring",
+      "icon": "https://cdn-icons-png.flaticon.com/512/2398/2398907.png",
+      "count": "13 Receipe"
+    },
+    {
+      "Images": "https://images.ctfassets.net/3vz37y2qhojh/5dal09RlDoODkegNwY0c0m/5b86edc79f697712f74d0d8dda6e1821/flu_flighter_chicken_noodle_soup_hero.jpg?w=927&fit=fill&fm=webp",
+      "ArticleName": "Winter",
+      "icon": "https://cdn-icons-png.flaticon.com/512/3204/3204807.png",
+      "count": "10 Receipe"
+    },
+    {
+      "Images": "https://images.ctfassets.net/3vz37y2qhojh/6HSSTmNTNEQE0PFlxbzAZ9/7631468d803e6b0efd6721a990516576/Sliced-easy-small-scale-thanksgiving-dinner-5-540x540.jpg?w=927&fit=fill&fm=webp",
+      "ArticleName": "Quarantine Cooking",
+      "icon": "https://cdn-icons-png.flaticon.com/512/2834/2834189.png",
+      "count": "9 Receipe"
+    }
+  ]
+}
