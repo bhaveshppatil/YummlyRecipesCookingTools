@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import kotlinx.android.synthetic.main.activity_related.*
+import kotlinx.android.synthetic.main.pipe_ebby_layout.*
 import java.io.InputStream
 
 class PipEbbyViewMore: AppCompatActivity() {
@@ -18,13 +19,13 @@ class PipEbbyViewMore: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_related)
+        setContentView(R.layout.pipe_ebby_layout)
 
 
 
         recipeAdapter= RelatedAdapter(this,recipeList)
-        recyclerView.layoutManager= LinearLayoutManager(this)
-        recyclerView.adapter=recipeAdapter
+        recyclerViewPipe.layoutManager= LinearLayoutManager(this)
+        recyclerViewPipe.adapter=recipeAdapter
         startBackground()
     }
 

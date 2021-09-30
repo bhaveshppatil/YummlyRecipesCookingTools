@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C3E0E1"
+    tools:context=".PrimeMemberActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="190dp"
+        android:src="@drawable/primememberpic"
+        android:layout_marginBottom="430dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="300dp"
+        android:src="@drawable/ic_cancel"
+        android:layout_marginBottom="560dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="110dp"
+        android:src="@drawable/spoon"
+        android:layout_marginBottom="550dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="270dp"
+        android:src="@drawable/coriandal"
+        android:layout_marginBottom="280dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bring more\nto the table"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:id="@+id/BringTable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#218282"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subscribe now for:"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BringTable"
+        android:layout_marginStart="27dp"
+        android:id="@+id/subcribe"
+        android:layout_marginTop="20dp"
+        android:textColor="#218282"/>
+
+    <ImageButton
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="27dp"
+        android:id="@+id/checkImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subcribe"
+        app:srcCompat="@drawable/ic_check" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recommended recipes to help\nmeet your goals"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:id="@+id/recommendedRecipe"
+        app:layout_constraintStart_toEndOf="@+id/checkImage"
+        app:layout_constraintTop_toBottomOf="@+id/subcribe"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="18dp"
+        android:textColor="#218282"/>
+    <ImageButton
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="35dp"
+        android:id="@+id/checkForIntegrated"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkImage"
+        app:srcCompat="@drawable/ic_check" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Integrated tools to plan,\nschedule and shop"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:id="@+id/integratedTools"
+        app:layout_constraintStart_toEndOf="@+id/checkForIntegrated"
+        app:layout_constraintTop_toBottomOf="@+id/recommendedRecipe"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#218282"/>
+    <ImageButton
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="35dp"
+        android:id="@+id/checkForScan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkForIntegrated"
+        app:srcCompat="@drawable/ic_check" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan-and-search ingredients to\nuse up food you have"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:id="@+id/scanSearch"
+        app:layout_constraintStart_toEndOf="@+id/checkForScan"
+        app:layout_constraintTop_toBottomOf="@+id/integratedTools"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#218282"/>
+    <ImageButton
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="35dp"
+        android:id="@+id/checkForCooking"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkForScan"
+        app:srcCompat="@drawable/ic_check" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan-and-search ingredients to\nuse up food you have"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:id="@+id/cooking"
+        app:layout_constraintStart_toEndOf="@+id/checkForCooking"
+        app:layout_constraintTop_toBottomOf="@+id/scanSearch"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#218282"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnFreeDays"
+        android:text="Try Free For 30 Days"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="18dp"
+        android:background="@drawable/button_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cooking"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="40dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Auto renews at selected price after\ntrial unless you cancel"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:id="@+id/renews"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFreeDays"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#4E4A4A"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn More"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:id="@+id/learnMore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/renews"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#E16120"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
