@@ -3,6 +3,7 @@ package com.example.myapplicationyummlyrecipescookingtools.Activities
 import android.graphics.PorterDuff
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment;
@@ -24,6 +25,9 @@ class HomeScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_screen)
+
+        val actionBar: ActionBar? = supportActionBar
+        actionBar!!.hide()
 
         tabLayout = findViewById(R.id.tabLayout)
         viewPager = findViewById(R.id.viewPager)

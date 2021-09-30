@@ -1,23 +1,23 @@
 package com.example.myapplicationyummlyrecipescookingtools.beforeHomepage
 
+import android.app.ProgressDialog
 import android.content.ContentValues.TAG
 import android.content.Intent
-import android.content.pm.PackageManager
-import android.icu.text.IDNA
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Message
 import android.util.Log
-import android.widget.Button
-import android.widget.TextView
+import android.view.View
+import android.webkit.WebView
+import android.webkit.WebViewClient
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
+import androidx.appcompat.app.AppCompatActivity
+import com.example.myapplicationyummlyrecipescookingtools.Activities.HomeScreen
 import com.example.myapplicationyummlyrecipescookingtools.MainActivity
 import com.example.myapplicationyummlyrecipescookingtools.R
 import com.facebook.AccessToken
 import com.facebook.CallbackManager
 import com.facebook.FacebookCallback
 import com.facebook.FacebookException
-import com.facebook.login.LoginManager
 import com.facebook.login.LoginResult
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -25,28 +25,40 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FacebookAuthProvider
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 import kotlinx.android.synthetic.main.activity_signup.*
-import java.security.MessageDigest
 import java.util.*
-import kotlin.coroutines.CoroutineContext
+
 
 class SignupActivity : AppCompatActivity() {
 
-    private lateinit var mauth:FirebaseAuth
+    private lateinit var mauth: FirebaseAuth
     private lateinit var googleSignInClient: GoogleSignInClient
     private lateinit var callbackManager: CallbackManager
-   // private lateinit var fbsignup:TextView
 
-    companion object{
-        private const val RC_SIGN_IN=100
+    override fun onStart() {
+        super.onStart()
+        val user: FirebaseUser? = mauth.currentUser
+
+        if (user != null) {
+            val intent = Intent(this, HomeScreen::class.java)
+            startActivity(intent)
+        }
     }
 
+    companion object {
+        private const val RC_SIGN_IN = 100
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
-        callbackManager= CallbackManager.Factory.create()
+
+        val actionBar: ActionBar? = supportActionBar
+        actionBar!!.hide()
+
+        callbackManager = CallbackManager.Factory.create()
 
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.default_web_client_id))
@@ -54,36 +66,58 @@ class SignupActivity : AppCompatActivity() {
             .build()
 
         googleSignInClient = GoogleSignIn.getClient(this, gso)
-        mauth= FirebaseAuth.getInstance()
+        mauth = FirebaseAuth.getInstance()
 
-        Googlesignup.setOnClickListener {
+        btnLoginWithGoogle.setOnClickListener {
             signIn()
         }
 
-     fbbtn.setOnClickListener {
-         fbbtn.setReadPermissions("email", "public_profile")
-         fbbtn.registerCallback(callbackManager, object : FacebookCallback<LoginResult> {
-             override fun onSuccess(loginResult: LoginResult) {
-                 Log.d(TAG, "facebook:onSuccess:$loginResult")
-                 handleFacebookAccessToken(loginResult.accessToken)
-                 startActivity(Intent(applicationContext, MainActivity::class.java))
+        btnLoginWithEmail.setOnClickListener {
+            Toast.makeText(
+                this,
+                "Email Login Unavailable",
+                Toast.LENGTH_SHORT
+            ).show()
+        }
+        btnLoginWithApple.setOnClickListener {
+            val intent = Intent(this, HomeScreen::class.java)
+            startActivity(intent)
+        }
 
-             }
+        crdFacebook.setOnClickListener {
+            login_button.performClick()
+        }
 
-             override fun onCancel() {
-                 Log.d(TAG, "facebook:onCancel")
-             }
+        login_button.setReadPermissions("email", "public_profile")
+        login_button.registerCallback(callbackManager, object : FacebookCallback<LoginResult> {
+            override fun onSuccess(loginResult: LoginResult) {
+                Log.d(TAG, "facebook:onSuccess:$loginResult")
+                handleFacebookAccessToken(loginResult.accessToken)
+                startActivity(Intent(applicationContext, MainActivity::class.java))
 
-             override fun onError(error: FacebookException) {
-                 Log.d(TAG, "facebook:onError", error)
-             }
-         })
-     }
+            }
 
+            override fun onCancel() {
+                Log.d(TAG, "facebook:onCancel")
+            }
 
+            override fun onError(error: FacebookException) {
+                Log.d(TAG, "facebook:onError", error)
+            }
+        })
 
+        tvPrivacyPolicy.setOnClickListener {
+
+            webView.visibility = View.VISIBLE
+            startWebView("https://www.yummly.com/privacy")
+
+        }
+        tvTermsServices.setOnClickListener {
+
+            webView.visibility = View.VISIBLE
+            startWebView("https://www.yummly.com/terms")
+        }
     }
-
 
 
     private fun handleFacebookAccessToken(token: AccessToken) {
@@ -96,19 +130,28 @@ class SignupActivity : AppCompatActivity() {
                     // Sign in success, update UI with the signed-in user's information
                     Log.d(TAG, "signInWithCredential:success")
                     val user = mauth.currentUser
+                    Toast.makeText(
+                        this,
+                        "Facebook Login Successful",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                    val intent = Intent(this, HomeScreen::class.java)
+                    startActivity(intent)
+
 
                 } else {
                     // If sign in fails, display a message to the user.
                     Log.w(TAG, "signInWithCredential:failure", task.exception)
-                    Toast.makeText(baseContext, "Authentication failed.",
-                        Toast.LENGTH_SHORT).show()
+                    Toast.makeText(baseContext, "Authentication failed.", Toast.LENGTH_SHORT).show()
                 }
             }
     }
+
     private fun signIn() {
         val signInIntent = googleSignInClient.signInIntent
         startActivityForResult(signInIntent, RC_SIGN_IN)
     }
+
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
@@ -126,6 +169,7 @@ class SignupActivity : AppCompatActivity() {
             }
         }
     }
+
     private fun firebaseAuthWithGoogle(idToken: String) {
         val credential = GoogleAuthProvider.getCredential(idToken, null)
         mauth.signInWithCredential(credential)
@@ -134,7 +178,7 @@ class SignupActivity : AppCompatActivity() {
                     // Sign in success, update UI with the signed-in user's information
                     Log.d(TAG, "signInWithCredential:success")
                     val user = mauth.currentUser
-                   val intent=Intent(this,MainActivity::class.java)
+                    val intent = Intent(this, HomeScreen::class.java)
                     startActivity(intent)
                 } else {
                     // If sign in fails, display a message to the user.
@@ -144,5 +188,42 @@ class SignupActivity : AppCompatActivity() {
             }
     }
 
+    private fun startWebView(url: String) {
 
+        val settings = webView.settings
+        settings.javaScriptEnabled = true
+        webView.settings.setSupportZoom(true)
+        WebView.setWebContentsDebuggingEnabled(false)
+
+        webView.scrollBarStyle = View.SCROLLBARS_OUTSIDE_OVERLAY
+        webView.settings.builtInZoomControls = true
+        webView.settings.useWideViewPort = true
+        webView.settings.loadWithOverviewMode = true
+
+        val progressDialog = ProgressDialog(this)
+        progressDialog.setMessage("Loading...")
+        progressDialog.show()
+        webView.webViewClient = object : WebViewClient() {
+            override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
+                view.loadUrl(url)
+                return true
+            }
+
+            override fun onPageFinished(view: WebView, url: String) {
+                if (progressDialog.isShowing) {
+                    progressDialog.dismiss()
+                }
+            }
+
+            override fun onReceivedError(
+                view: WebView,
+                errorCode: Int,
+                description: String,
+                failingUrl: String
+            ) {
+                Toast.makeText(this@SignupActivity, "Error:$description", Toast.LENGTH_SHORT).show()
+            }
+        }
+        webView.loadUrl(url)
+    }
 }

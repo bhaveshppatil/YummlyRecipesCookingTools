@@ -1,15 +1,18 @@
 package com.example.myapplicationyummlyrecipescookingtools.Fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.myapplicationyummlyrecipescookingtools.Activities.IngredientsActivity
 import com.example.myapplicationyummlyrecipescookingtools.Adapter.CLickListener
 import com.example.myapplicationyummlyrecipescookingtools.Adapter.ReceipeAdapter
 import com.example.myapplicationyummlyrecipescookingtools.Models.ArticlesModel
 import com.example.myapplicationyummlyrecipescookingtools.Models.ReceipeModel
 import com.example.myapplicationyummlyrecipescookingtools.Models.ResponseModel
+import com.example.myapplicationyummlyrecipescookingtools.PipEbbyViewMore
 import com.example.myapplicationyummlyrecipescookingtools.R
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
@@ -70,8 +73,14 @@ class JustForYouFragment : Fragment(R.layout.fragment_just_for_you), CLickListen
         startBackground()
     }
 
-
     override fun onReceipeClick(receipeModel: ReceipeModel) {
+        val  intent = Intent(context, IngredientsActivity::class.java)
+        intent.putExtra("image", receipeModel.images)
+        intent.putExtra("ingredient", receipeModel.ingredients)
+        intent.putExtra("calories", receipeModel.calories)
+        intent.putExtra("minutes", receipeModel.minutes)
+
+        startActivity(intent)
     }
 
     override fun onArticleClick(articlesModel: ArticlesModel) {

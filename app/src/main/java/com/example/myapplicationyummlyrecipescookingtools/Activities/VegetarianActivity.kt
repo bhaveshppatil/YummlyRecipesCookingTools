@@ -3,6 +3,7 @@ package com.example.myapplicationyummlyrecipescookingtools.Activities
 import android.os.Bundle
 import android.view.View
 import android.webkit.WebView
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -63,6 +64,9 @@ class VegetarianActivity : AppCompatActivity(), VegetarianListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_vegetarian)
+
+        val actionBar: ActionBar? = supportActionBar
+        actionBar!!.hide()
 
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view_articles_content)
         articleContentAdapter = ArticleContentAdapter(this, vegetarianModelList, this)

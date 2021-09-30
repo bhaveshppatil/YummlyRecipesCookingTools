@@ -1,9 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
 
-    <style name="Theme.MyApplicationYummlyRecipesCookingTools" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-
-    <style name="Theme.MyApplicationYummlyRecipesCookingTools" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.MyApplicationYummlyRecipesCookingTools" parent="Theme.AppCompat.Light.DarkActionBar">
 
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
