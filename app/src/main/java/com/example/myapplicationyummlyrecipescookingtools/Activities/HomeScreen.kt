@@ -3,9 +3,11 @@ package com.example.myapplicationyummlyrecipescookingtools.Activities
 import android.graphics.PorterDuff
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager
 import com.example.myapplicationyummlyrecipescookingtools.Adapter.ViewPagerAdapter
@@ -70,32 +72,35 @@ class HomeScreen : AppCompatActivity() {
 
         bottomNavigationView = findViewById(R.id.bottomNavigation);
         bottomNavigationView.setOnNavigationItemSelectedListener {
-
             when (it.itemId) {
-                R.id.home -> {
+                R.id.Home -> {
+                    tabMode.visibility = View.VISIBLE
                     viewPager.visibility = View.VISIBLE
                     loadFragment(JustForYouFragment())
                     return@setOnNavigationItemSelectedListener true
                 }
                 R.id.Search -> {
+                    tabMode.visibility = View.GONE
                     viewPager.visibility = View.GONE
                     loadFragment(SearchFragment())
                     return@setOnNavigationItemSelectedListener true
                 }
                 R.id.Profile -> {
                     viewPager.visibility = View.GONE
-
+                    tabMode.visibility = View.GONE
                     loadFragment(ProfileFragment())
                     return@setOnNavigationItemSelectedListener true
                 }
                 R.id.list -> {
+                    tabMode.visibility = View.GONE
                     viewPager.visibility = View.GONE
                     loadFragment(PremiumFragment())
                     return@setOnNavigationItemSelectedListener true
                 }
                 R.id.Setting -> {
+                    tabMode.visibility = View.GONE
                     viewPager.visibility = View.GONE
-                    loadFragment(ThermometerFragment())
+                    loadFragment(SettingsFragment())
                     return@setOnNavigationItemSelectedListener true
                 }
             }
