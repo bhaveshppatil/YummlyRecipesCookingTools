@@ -13,5 +13,22 @@ class SettingActivity : AppCompatActivity() {
             val intent=Intent(this,MyAccountActivity::class.java)
             startActivity(intent)
         }
+        subscription.setOnClickListener {
+            val intent=Intent(this,PrimeMemberActivity::class.java)
+            startActivity(intent)
+        }
+        preferences.setOnClickListener {
+            val intent=Intent(this,PreferencesActivity::class.java)
+            startActivity(intent)
+        }
+        aboutYummly.setOnClickListener {
+            val intent=Intent(this,AboutYummlyActivity::class.java)
+            startActivity(intent)
+        }
+        feedback.setOnClickListener {
+            val intent=Intent(this,FeedbackActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

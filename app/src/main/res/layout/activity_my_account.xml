@@ -20,7 +20,7 @@
         android:scaleType="centerCrop"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
-        android:id="@+id/arrowImage"
+        android:id="@+id/arrowImageInMyAccount"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
     <TextView
@@ -31,7 +31,7 @@
         android:textSize="25dp"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/arrowImage"
+        app:layout_constraintTop_toBottomOf="@+id/arrowImageInMyAccount"
         android:layout_marginTop="100dp"
         android:layout_marginStart="20dp"/>
 

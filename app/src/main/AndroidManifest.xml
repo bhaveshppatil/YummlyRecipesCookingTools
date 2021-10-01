@@ -12,21 +12,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplicationYummlyRecipesCookingTools">
         <activity
-            android:name=".MyAccountActivity"
-            android:exported="true" >
-
-
-        </activity>
+            android:name=".FeedbackActivity"
+            android:exported="true" />
         <activity
-            android:name=".SettingActivity"
+            android:name=".AboutYummlyActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+        <activity
+            android:name=".PreferencesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MyAccountActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SettingActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".PrimeMemberActivity"
             android:exported="true" />
@@ -42,7 +47,7 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".beforeHomepage.SignupActivity"
             android:exported="true" />
