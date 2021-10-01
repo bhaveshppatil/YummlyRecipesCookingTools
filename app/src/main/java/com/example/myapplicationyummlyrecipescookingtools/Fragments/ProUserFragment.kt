@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplicationyummlyrecipescookingtools.Adapter.ProUserAdapter
-import com.example.myapplicationyummlyrecipescookingtools.Adapter.userListener
+import com.example.myapplicationyummlyrecipescookingtools.Adapter.UserListener
 import com.example.myapplicationyummlyrecipescookingtools.Models.ProUser
 import com.example.myapplicationyummlyrecipescookingtools.Models.ProUsersModel
 import com.example.myapplicationyummlyrecipescookingtools.R
@@ -15,7 +15,7 @@ import com.google.gson.reflect.TypeToken
 import java.io.InputStream
 
 
-class ProUserFragment : Fragment(R.layout.fragment_pro), userListener {
+class ProUserFragment : Fragment(R.layout.fragment_pro), UserListener {
     private var userModelList = mutableListOf<ProUsersModel>()
     private lateinit var proUserAdapter: ProUserAdapter
 

@@ -74,12 +74,12 @@ class JustForYouFragment : Fragment(R.layout.fragment_just_for_you), CLickListen
     }
 
     override fun onReceipeClick(receipeModel: ReceipeModel) {
+
         val intent = Intent(context, IngredientsActivity::class.java)
         intent.putExtra("image", receipeModel.images)
         intent.putExtra("ingredient", receipeModel.ingredients)
         intent.putExtra("calories", receipeModel.calories)
         intent.putExtra("minutes", receipeModel.minutes)
-
         startActivity(intent)
     }
 
