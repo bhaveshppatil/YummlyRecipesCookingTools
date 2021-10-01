@@ -1,17 +1,16 @@
-package com.example.myapplicationyummlyrecipescookingtools.SearchReceipe
+package com.example.myapplicationyummlyrecipescookingtools.Adapter
 
 import android.content.Context
 import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.MediaController
 import android.widget.RelativeLayout
 import android.widget.TextView
 import android.widget.VideoView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.myapplicationyummlyrecipescookingtools.Adapter.SearchListener
 import com.example.myapplicationyummlyrecipescookingtools.R
+import com.example.myapplicationyummlyrecipescookingtools.Models.SearchModel
 
 class SearchAdapter(
     val context: Context,

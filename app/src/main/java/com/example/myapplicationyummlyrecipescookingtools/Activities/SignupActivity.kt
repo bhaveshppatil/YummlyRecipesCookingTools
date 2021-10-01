@@ -1,4 +1,4 @@
-package com.example.myapplicationyummlyrecipescookingtools.beforeHomepage
+package com.example.myapplicationyummlyrecipescookingtools.Activities
 
 import android.app.ProgressDialog
 import android.content.ContentValues.TAG
@@ -11,7 +11,6 @@ import android.webkit.WebViewClient
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
-import com.example.myapplicationyummlyrecipescookingtools.Activities.HomeScreen
 import com.example.myapplicationyummlyrecipescookingtools.MainActivity
 import com.example.myapplicationyummlyrecipescookingtools.R
 import com.facebook.AccessToken

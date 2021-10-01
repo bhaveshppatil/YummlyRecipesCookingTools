@@ -6,11 +6,11 @@ import android.widget.MediaController
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.myapplicationyummlyrecipescookingtools.Adapter.SearchAdapter
 import com.example.myapplicationyummlyrecipescookingtools.Adapter.SearchListener
+import com.example.myapplicationyummlyrecipescookingtools.Models.SearchDataModel
+import com.example.myapplicationyummlyrecipescookingtools.Models.SearchModel
 import com.example.myapplicationyummlyrecipescookingtools.R
-import com.example.myapplicationyummlyrecipescookingtools.SearchReceipe.SearchAdapter
-import com.example.myapplicationyummlyrecipescookingtools.SearchReceipe.SearchDataModel
-import com.example.myapplicationyummlyrecipescookingtools.SearchReceipe.SearchModel
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import kotlinx.android.synthetic.main.search_item_view.*
@@ -72,7 +72,7 @@ class SearchFragment : Fragment(R.layout.fragment_search), SearchListener {
 
     override fun onSearchItemClick(searchModel: SearchModel) {
 
-        val mediaController:MediaController = MediaController(context)
+        val mediaController: MediaController = MediaController(context)
         videoView.setMediaController(mediaController)
 
     }

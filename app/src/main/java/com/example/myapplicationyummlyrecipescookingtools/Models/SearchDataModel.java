@@ -1,4 +1,4 @@
-package com.example.myapplicationyummlyrecipescookingtools.SearchReceipe;
+package com.example.myapplicationyummlyrecipescookingtools.Models;
 
 import com.google.gson.annotations.SerializedName;
 

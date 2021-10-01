@@ -5,7 +5,6 @@ import android.os.Bundle
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplicationyummlyrecipescookingtools.Activities.YummlyWelcome
-import com.example.myapplicationyummlyrecipescookingtools.beforeHomepage.SignupActivity
 import kotlinx.android.synthetic.main.one_extra_layout.*
 import java.util.*
 

@@ -6,7 +6,6 @@ import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplicationyummlyrecipescookingtools.R
-import com.example.myapplicationyummlyrecipescookingtools.beforeHomepage.SignupActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import kotlinx.android.synthetic.main.activity_yummly_welcome.*
