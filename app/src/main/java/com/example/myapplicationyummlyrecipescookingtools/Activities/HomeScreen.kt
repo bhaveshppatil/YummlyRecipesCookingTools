@@ -3,12 +3,10 @@ package com.example.myapplicationyummlyrecipescookingtools.Activities
 import android.graphics.PorterDuff
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import androidx.core.view.isVisible
-import androidx.fragment.app.Fragment;
+import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import com.example.myapplicationyummlyrecipescookingtools.Adapter.ViewPagerAdapter
 import com.example.myapplicationyummlyrecipescookingtools.Fragments.*

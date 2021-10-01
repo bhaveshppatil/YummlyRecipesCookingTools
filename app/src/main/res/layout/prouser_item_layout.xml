@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/userView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/view2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="1.9"
+            app:cardCornerRadius="40dp">
+
+            <ImageView
+                android:id="@+id/userProfilePic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icons8_apple_logo_50" />
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/imgUserArt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/_maker" />
+
+        <TextView
+            android:id="@+id/tvCaptionName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tvUsername"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:text="Dry Rub Baked Chicken Wings"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="LORD BYRON'S KITCHEN"
+            android:textColor="#3A98AA"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</LinearLayout>
