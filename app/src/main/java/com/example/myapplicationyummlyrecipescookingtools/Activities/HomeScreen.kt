@@ -83,15 +83,18 @@ class HomeScreen : AppCompatActivity() {
                     return@setOnNavigationItemSelectedListener true
                 }
                 R.id.Profile -> {
+                    viewPager.visibility = View.GONE
 
                     loadFragment(ProfileFragment())
                     return@setOnNavigationItemSelectedListener true
                 }
                 R.id.list -> {
+                    viewPager.visibility = View.GONE
                     loadFragment(PremiumFragment())
                     return@setOnNavigationItemSelectedListener true
                 }
-                R.id.Connection -> {
+                R.id.Setting -> {
+                    viewPager.visibility = View.GONE
                     loadFragment(ThermometerFragment())
                     return@setOnNavigationItemSelectedListener true
                 }
@@ -103,7 +106,7 @@ class HomeScreen : AppCompatActivity() {
     private fun loadFragment(fragment: Fragment) {
         // load fragment
         val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.FrameLayout, fragment)
+        transaction.replace(R.id.frameLayout, fragment)
         transaction.addToBackStack("addFrag")
         transaction.commit()
     }
