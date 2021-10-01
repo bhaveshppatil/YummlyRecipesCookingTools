@@ -5,12 +5,10 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.myapplicationyummlyrecipescookingtools.Adapter.ReceipeAdapter
+import com.example.myapplicationyummlyrecipescookingtools.Adapter.ProUserAdapter
 import com.example.myapplicationyummlyrecipescookingtools.Adapter.userListener
-import com.example.myapplicationyummlyrecipescookingtools.Models.ReceipeModel
-import com.example.myapplicationyummlyrecipescookingtools.ProTab.ProUser
-import com.example.myapplicationyummlyrecipescookingtools.ProTab.ProUserAdapter
-import com.example.myapplicationyummlyrecipescookingtools.ProTab.ProUsersModel
+import com.example.myapplicationyummlyrecipescookingtools.Models.ProUser
+import com.example.myapplicationyummlyrecipescookingtools.Models.ProUsersModel
 import com.example.myapplicationyummlyrecipescookingtools.R
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
