@@ -4,6 +4,9 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
+import com.example.myapplicationyummlyrecipescookingtools.Fragments.SettingsFragment
 import kotlinx.android.synthetic.main.activity_about_yummly.*
 
 class AboutYummlyActivity : AppCompatActivity() {
@@ -27,7 +30,8 @@ class AboutYummlyActivity : AppCompatActivity() {
             startActivity(intent)
         }
         arrowImageInAbout.setOnClickListener {
-            val intent=Intent(this,SettingActivity::class.java)
+
+            val intent=Intent(this,SettingsFragment::class.java)
             startActivity(intent)
         }
     }

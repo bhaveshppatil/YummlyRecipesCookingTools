@@ -12,7 +12,7 @@ import com.bumptech.glide.Glide
 class RelatedAdapter(val context: Context, var list:MutableList<Receipe>): RecyclerView.Adapter<RelatedAdapter.RecipeViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecipeViewHolder {
-        val view: View = LayoutInflater.from(context).inflate(R.layout.related_viewmore_layout,parent,false)
+        val view: View = LayoutInflater.from(context).inflate(R.layout.receipe_item_layout,parent,false)
         return RecipeViewHolder(view)
     }
 
@@ -31,30 +31,21 @@ class RelatedAdapter(val context: Context, var list:MutableList<Receipe>): Recyc
 
 
     class RecipeViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
-        var image: ImageView = itemView.findViewById(R.id.recipeImage)
+        var image: ImageView = itemView.findViewById(R.id.imageRecipe)
         var recipeName: TextView
         var recipeUser: TextView
-        var recipeIngredients: TextView
-        var recipeTime: TextView
-        var recipeCalories: TextView
         var recipeCollection: TextView
 
         init {
-            recipeName=itemView.findViewById(R.id.recipeName)
-            recipeUser=itemView.findViewById(R.id.recipeUser)
-            recipeIngredients=itemView.findViewById(R.id.recipeIngredients)
-            recipeTime=itemView.findViewById(R.id.recipeTime)
-            recipeCalories=itemView.findViewById(R.id.recipeCalories)
-            recipeCollection=itemView.findViewById(R.id.recipeColletion)
+            recipeName=itemView.findViewById(R.id.tvReceipeName)
+            recipeUser=itemView.findViewById(R.id.username)
+            recipeCollection=itemView.findViewById(R.id.collection)
         }
 
         fun setData(model:Receipe){
             Glide.with(image).load(model.Images).into(image)
             recipeName.text = model.RecipeName
             recipeUser.text=model.User
-            recipeIngredients.text=model.Ingredients
-            recipeTime.text=model.Minutes
-            recipeCalories.text=model.Calories
             recipeCollection.text=model.Collection
 
 

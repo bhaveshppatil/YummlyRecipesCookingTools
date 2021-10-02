@@ -20,8 +20,8 @@ class RelatedActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_related)
         recipeAdapter= RelatedAdapter(this,recipeList)
-        recyclerView.layoutManager= LinearLayoutManager(this)
-        recyclerView.adapter=recipeAdapter
+        recyclerViewInViewMoreRelated.layoutManager= LinearLayoutManager(this)
+        recyclerViewInViewMoreRelated.adapter=recipeAdapter
         startBackground()
     }
 
@@ -32,7 +32,7 @@ class RelatedActivity : AppCompatActivity() {
 
     private fun readJsonFile() {
         try {
-            var inputStream: InputStream =this.assets.open("recipeDetails.json")
+            var inputStream: InputStream =this.assets.open("articles.json")
             var data=inputStream.read()
             var builder:StringBuilder= StringBuilder()
             while(data!=-1){

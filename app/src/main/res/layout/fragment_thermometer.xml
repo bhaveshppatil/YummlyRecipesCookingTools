@@ -1,14 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Fragments.SettingsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Thermometer Fragment" />
+        android:layout_height="200dp"
+        android:src="@drawable/salad"
+        android:scaleType="centerCrop"
+        android:id="@+id/saladImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_arrow"
+        android:scaleType="centerCrop"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/arrowImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/arrowImage"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Account"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:id="@+id/myAccount"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saladImage"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Try Yummly Subscription"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:id="@+id/subscription"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myAccount"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dietary Preferences"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:id="@+id/preferences"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subscription"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connected Appliances"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:id="@+id/appliances"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/preferences"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Yummly"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:id="@+id/aboutYummly"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appliances"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feedback and Support"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:id="@+id/feedback"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutYummly"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Part of the Whirlpool Corp. family of brands"
+        android:textSize="10dp"
+        android:id="@+id/brands"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedback"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version 6.4.2(209)\nUUID 68411318-2ef9-4e34-bb0c-1396cb3f7f84"
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brands"
+        android:layout_marginStart="20dp"/>
 
-</FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

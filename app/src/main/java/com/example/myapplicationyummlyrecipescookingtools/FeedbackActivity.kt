@@ -4,15 +4,16 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.myapplicationyummlyrecipescookingtools.Fragments.SettingsFragment
 import kotlinx.android.synthetic.main.activity_feedback.*
-import kotlinx.android.synthetic.main.activity_setting.*
 
 class FeedbackActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_feedback)
         arrowImageInFeeback.setOnClickListener {
-            val intent=Intent(this,SettingActivity::class.java)
+            val intent=Intent(this,SettingsFragment::class.java)
+
             startActivity(intent)
         }
         feebackSession.setOnClickListener {
