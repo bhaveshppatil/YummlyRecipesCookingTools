@@ -20,8 +20,6 @@ class PipEbbyViewMore: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_related)
 
-
-
         recipeAdapter= RelatedAdapter(this,recipeList)
         recyclerView.layoutManager= LinearLayoutManager(this)
         recyclerView.adapter=recipeAdapter

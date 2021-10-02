@@ -3,9 +3,10 @@ package com.example.myapplicationyummlyrecipescookingtools.Activities
 import android.graphics.PorterDuff
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import androidx.fragment.app.Fragment;
+import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import com.example.myapplicationyummlyrecipescookingtools.Adapter.ViewPagerAdapter
 import com.example.myapplicationyummlyrecipescookingtools.Fragments.*
@@ -24,6 +25,9 @@ class HomeScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_screen)
+
+        val actionBar: ActionBar? = supportActionBar
+        actionBar!!.hide()
 
         tabLayout = findViewById(R.id.tabLayout)
         viewPager = findViewById(R.id.viewPager)
@@ -66,29 +70,35 @@ class HomeScreen : AppCompatActivity() {
 
         bottomNavigationView = findViewById(R.id.bottomNavigation);
         bottomNavigationView.setOnNavigationItemSelectedListener {
-
             when (it.itemId) {
-                R.id.home -> {
+                R.id.Home -> {
+                    tabMode.visibility = View.VISIBLE
                     viewPager.visibility = View.VISIBLE
                     loadFragment(JustForYouFragment())
                     return@setOnNavigationItemSelectedListener true
                 }
                 R.id.Search -> {
+                    tabMode.visibility = View.GONE
                     viewPager.visibility = View.GONE
                     loadFragment(SearchFragment())
                     return@setOnNavigationItemSelectedListener true
                 }
                 R.id.Profile -> {
-
+                    viewPager.visibility = View.GONE
+                    tabMode.visibility = View.GONE
                     loadFragment(ProfileFragment())
                     return@setOnNavigationItemSelectedListener true
                 }
                 R.id.list -> {
+                    tabMode.visibility = View.GONE
+                    viewPager.visibility = View.GONE
                     loadFragment(PremiumFragment())
                     return@setOnNavigationItemSelectedListener true
                 }
-                R.id.Connection -> {
-                    loadFragment(ThermometerFragment())
+                R.id.Setting -> {
+                    tabMode.visibility = View.GONE
+                    viewPager.visibility = View.GONE
+                    loadFragment(SettingsFragment())
                     return@setOnNavigationItemSelectedListener true
                 }
             }
@@ -99,7 +109,7 @@ class HomeScreen : AppCompatActivity() {
     private fun loadFragment(fragment: Fragment) {
         // load fragment
         val transaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.FrameLayout, fragment)
+        transaction.replace(R.id.frameLayout, fragment)
         transaction.addToBackStack("addFrag")
         transaction.commit()
     }

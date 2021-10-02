@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/antic_slab</item>
+        <item>@font/bree_serif</item>
+        <item>@font/bubbler_one</item>
+        <item>@font/cantora_one</item>
+        <item>@font/capriola</item>
+        <item>@font/catamaran_thin</item>
         <item>@font/concert_one</item>
     </array>
 </resources>

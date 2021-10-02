@@ -6,7 +6,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.example.myapplicationyummlyrecipescookingtools.Fragments.ExploreFragment
 import com.example.myapplicationyummlyrecipescookingtools.Fragments.JustForYouFragment
-import com.example.myapplicationyummlyrecipescookingtools.Fragments.ProFragment
+import com.example.myapplicationyummlyrecipescookingtools.Fragments.ProUserFragment
 
 internal class ViewPagerAdapter(
     context: Context,
@@ -27,7 +27,7 @@ internal class ViewPagerAdapter(
                 ExploreFragment()
             }
             2 -> {
-                ProFragment()
+                ProUserFragment()
             }
             else -> getItem(position)
         }

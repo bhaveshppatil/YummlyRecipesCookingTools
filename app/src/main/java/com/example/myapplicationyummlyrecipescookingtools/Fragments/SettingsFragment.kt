@@ -4,6 +4,6 @@ import androidx.fragment.app.Fragment
 import com.example.myapplicationyummlyrecipescookingtools.R
 
 
-class ThermometerFragment : Fragment(R.layout.fragment_thermometer) {
+class SettingsFragment : Fragment(R.layout.fragment_thermometer) {
 
 }

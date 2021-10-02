@@ -3,7 +3,6 @@
     package="com.example.myapplicationyummlyrecipescookingtools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,7 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplicationYummlyRecipesCookingTools">
         <activity
-            android:name=".listsshop.listsActivity"
+            android:name=".Activities.Thermometer"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.YummlyWelcome"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.SignupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.IngredientsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PipEbbyViewMore"
             android:exported="true" />
         <activity
             android:name="com.facebook.FacebookActivity"
@@ -45,12 +56,6 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" />
-        <activity
-            android:name=".beforeHomepage.SignupActivity"
-            android:exported="true" />
-        <activity
-            android:name=".beforeHomepage.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

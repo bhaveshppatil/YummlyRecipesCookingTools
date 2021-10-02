@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.Thermometer">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/connected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="My Connected Kitchen"
+            android:textColor="#38908B"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/crdImageView"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_below="@id/connected"
+            android:layout_margin="30dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/connected">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/thermometer__large___2_" />
+
+                <TextView
+                    android:id="@+id/smart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/cantora_one"
+                    android:text="Smart \n Thermometer"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/smartText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/smart"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="70dp"
+                    android:fontFamily="@font/antic_slab"
+                    android:text="@string/thermometerStr"
+                    android:textColor="@color/white" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/crdBuy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/smartText"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginEnd="150dp"
+                    android:background="@color/white"
+                    app:cardCornerRadius="25dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        android:fontFamily="@font/cantora_one"
+                        android:text="Buy"
+                        android:textSize="15sp" />
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/appliances"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/crdImageView"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/capriola"
+            android:gravity="center_horizontal"
+            android:text="You don't have any connected appliances yet"
+            android:textColor="#38908B" />
+
+        <Button
+            android:id="@+id/btnAddThermometer"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/appliances"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="70dp"
+            android:background="@drawable/btnshape"
+            android:text="Add Thermometer"
+            android:textAllCaps="false"
+            android:textColor="#38908B" />
+
+    </RelativeLayout>
+
+</LinearLayout>
