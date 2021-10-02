@@ -9,8 +9,8 @@ import com.example.myapplicationyummlyrecipescookingtools.Adapter.ProUserAdapter
 import com.example.myapplicationyummlyrecipescookingtools.Adapter.UserListener
 import com.example.myapplicationyummlyrecipescookingtools.Models.ProUser
 import com.example.myapplicationyummlyrecipescookingtools.Models.ProUsersModel
-import com.example.myapplicationyummlyrecipescookingtools.R
 import com.google.gson.Gson
+import com.example.myapplicationyummlyrecipescookingtools.R
 import com.google.gson.reflect.TypeToken
 import java.io.InputStream
 
