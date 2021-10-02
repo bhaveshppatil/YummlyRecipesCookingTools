@@ -1,32 +1,56 @@
 package com.example.myapplicationyummlyrecipescookingtools
 
 import android.content.Intent
-import android.os.Bundle
-import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
-import com.example.myapplicationyummlyrecipescookingtools.Activities.YummlyWelcome
+import android.os.Bundle
+import android.view.View
 import kotlinx.android.synthetic.main.one_extra_layout.*
-import java.util.*
 
-
-class MainActivity : AppCompatActivity() {
-    lateinit var timer: Timer
-
+class MainActivity :AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val actionBar: ActionBar? = supportActionBar
-        actionBar!!.hide()
+        viewMoreRelated.setOnClickListener {
+            val intent=Intent(this,RelatedActivity::class.java)
+            startActivity(intent)
+        }
+        viewMorePipEbby.setOnClickListener {
+            val intent=Intent(this,RelatedActivity::class.java)
+            startActivity(intent)
+        }
 
-        timer = Timer()
-        timer.schedule(object : TimerTask() {
-            override fun run() {
-                val intent = Intent(this@MainActivity, YummlyWelcome::class.java)
-                startActivity(intent)
-                finish()
-            }
-        }, 3000)
+        circleCalories.setOnClickListener {
+            val intent=Intent(this,PrimeMemberActivity::class.java)
+            startActivity(intent)
+        }
+        circleSodium.setOnClickListener {
+            val intent=Intent(this,PrimeMemberActivity::class.java)
+            startActivity(intent)
+        }
+        circleCarbs.setOnClickListener {
+            val intent=Intent(this,PrimeMemberActivity::class.java)
+            startActivity(intent)
+        }
+        circleFiber.setOnClickListener {
+            val intent=Intent(this,PrimeMemberActivity::class.java)
+            startActivity(intent)
+        }
+        circlePotassium.setOnClickListener {
+            val intent=Intent(this,PrimeMemberActivity::class.java)
+            startActivity(intent)
+        }
+        circleViewMore.setOnClickListener {
+            val intent=Intent(this,PrimeMemberActivity::class.java)
+            startActivity(intent)
+        }
+        circleFat.setOnClickListener {
+            val intent=Intent(this,PrimeMemberActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
+
+
 }
