@@ -12,28 +12,40 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplicationYummlyRecipesCookingTools">
         <activity
-            android:name=".FeedbackActivity"
+            android:name=".Activities.Thermometer"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.YummlyWelcome"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.SignupActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.IngredientsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".PipEbbyViewMore"
             android:exported="true" />
         <activity
             android:name=".AboutYummlyActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
-            android:name=".PreferencesActivity"
+            android:name=".FeedbackActivity"
             android:exported="true" />
         <activity
             android:name=".MyAccountActivity"
             android:exported="true" />
         <activity
-            android:name=".SettingActivity"
-            android:exported="true"></activity>
+            android:name=".PreferencesActivity"
+            android:exported="true" />
         <activity
             android:name=".PrimeMemberActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RelatedActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SettingActivity"
             android:exported="true" />
         <activity
             android:name="com.facebook.FacebookActivity"
@@ -41,19 +53,42 @@
             android:label="@string/app_name" />
         <activity
             android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Activities.VegetarianActivity"
             android:exported="true" />
         <activity
-            android:name=".RelatedActivity"
+            android:name=".Activities.ReceipeDetails"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.HomeScreen"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" />
-        <activity
-            android:name=".beforeHomepage.SignupActivity"
-            android:exported="true" />
-        <activity
-            android:name=".beforeHomepage.SplashScreen"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
     </application>
 
 </manifest>

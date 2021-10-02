@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
+import com.example.myapplicationyummlyrecipescookingtools.PrimeMemberActivity
 import com.example.myapplicationyummlyrecipescookingtools.R
 import com.example.myapplicationyummlyrecipescookingtools.RelatedActivity
 import kotlinx.android.synthetic.main.activity_ingredients.*
@@ -39,6 +40,35 @@ class IngredientsActivity : AppCompatActivity() {
 
             startActivity(intent)
         }
+        circleCalories.setOnClickListener {
+            val intent=Intent(this, PrimeMemberActivity::class.java)
+            startActivity(intent)
+        }
+        circleSodium.setOnClickListener {
+            val intent=Intent(this, PrimeMemberActivity::class.java)
+            startActivity(intent)
+        }
+        circleCarbs.setOnClickListener {
+            val intent=Intent(this, PrimeMemberActivity::class.java)
+            startActivity(intent)
+        }
+        circleFiber.setOnClickListener {
+            val intent=Intent(this, PrimeMemberActivity::class.java)
+            startActivity(intent)
+        }
+        circlePotassium.setOnClickListener {
+            val intent=Intent(this, PrimeMemberActivity::class.java)
+            startActivity(intent)
+        }
+        circleViewMore.setOnClickListener {
+            val intent=Intent(this, PrimeMemberActivity::class.java)
+            startActivity(intent)
+        }
+        circleFat.setOnClickListener {
+            val intent=Intent(this, PrimeMemberActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }

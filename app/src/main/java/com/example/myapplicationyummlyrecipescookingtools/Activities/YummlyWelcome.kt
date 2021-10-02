@@ -25,8 +25,8 @@ class YummlyWelcome : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_yummly_welcome)
 
-        val actionBar: ActionBar? = supportActionBar
-        actionBar!!.hide()
+//        val actionBar: ActionBar? = supportActionBar
+//        actionBar!!.hide()
 
         mauth = FirebaseAuth.getInstance()
 

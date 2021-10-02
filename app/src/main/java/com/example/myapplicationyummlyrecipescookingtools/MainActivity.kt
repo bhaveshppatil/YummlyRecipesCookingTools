@@ -4,53 +4,31 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.ActionBar
+import com.example.myapplicationyummlyrecipescookingtools.Activities.YummlyWelcome
 import kotlinx.android.synthetic.main.one_extra_layout.*
+import java.util.*
 
 class MainActivity :AppCompatActivity() {
+
+    lateinit var timer: Timer
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+//        val actionBar: ActionBar? = supportActionBar
+//        actionBar!!.hide()
 
-        viewMoreRelated.setOnClickListener {
-            val intent=Intent(this,RelatedActivity::class.java)
-            startActivity(intent)
-        }
-        viewMorePipEbby.setOnClickListener {
-            val intent=Intent(this,RelatedActivity::class.java)
-            startActivity(intent)
-        }
-
-        circleCalories.setOnClickListener {
-            val intent=Intent(this,PrimeMemberActivity::class.java)
-            startActivity(intent)
-        }
-        circleSodium.setOnClickListener {
-            val intent=Intent(this,PrimeMemberActivity::class.java)
-            startActivity(intent)
-        }
-        circleCarbs.setOnClickListener {
-            val intent=Intent(this,PrimeMemberActivity::class.java)
-            startActivity(intent)
-        }
-        circleFiber.setOnClickListener {
-            val intent=Intent(this,PrimeMemberActivity::class.java)
-            startActivity(intent)
-        }
-        circlePotassium.setOnClickListener {
-            val intent=Intent(this,PrimeMemberActivity::class.java)
-            startActivity(intent)
-        }
-        circleViewMore.setOnClickListener {
-            val intent=Intent(this,PrimeMemberActivity::class.java)
-            startActivity(intent)
-        }
-        circleFat.setOnClickListener {
-            val intent=Intent(this,PrimeMemberActivity::class.java)
-            startActivity(intent)
-        }
+        timer = Timer()
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                val intent = Intent(this@MainActivity, YummlyWelcome::class.java)
+                startActivity(intent)
+                finish()
+            }
+        }, 3000)
 
 
     }
-
 
 }
