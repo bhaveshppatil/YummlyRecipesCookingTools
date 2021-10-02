@@ -66,7 +66,6 @@ class SignupActivity : AppCompatActivity() {
              override fun onSuccess(loginResult: LoginResult) {
                  Log.d(TAG, "facebook:onSuccess:$loginResult")
                  handleFacebookAccessToken(loginResult.accessToken)
-                 startActivity(Intent(applicationContext, MainActivity::class.java))
 
              }
 
@@ -76,6 +75,8 @@ class SignupActivity : AppCompatActivity() {
 
              override fun onError(error: FacebookException) {
                  Log.d(TAG, "facebook:onError", error)
+                 Toast.makeText(applicationContext, "Authentication failed.",
+                     Toast.LENGTH_SHORT).show();
              }
          })
      }
@@ -96,6 +97,8 @@ class SignupActivity : AppCompatActivity() {
                     // Sign in success, update UI with the signed-in user's information
                     Log.d(TAG, "signInWithCredential:success")
                     val user = mauth.currentUser
+                    startActivity(Intent(this, MainActivity::class.java))
+
 
                 } else {
                     // If sign in fails, display a message to the user.
