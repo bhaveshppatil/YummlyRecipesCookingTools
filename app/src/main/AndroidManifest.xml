@@ -27,9 +27,6 @@
             android:name=".Activities.IngredientsActivity"
             android:exported="true" />
         <activity
-            android:name=".Activities.PipEbbyViewMore"
-            android:exported="true" />
-        <activity
             android:name=".AboutYummlyActivity"
             android:exported="true" />
         <activity
