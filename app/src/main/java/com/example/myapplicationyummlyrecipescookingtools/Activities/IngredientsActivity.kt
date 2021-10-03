@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
+import com.example.myapplicationyummlyrecipescookingtools.Models.PipeEbbyViewMoreActivity
 import com.example.myapplicationyummlyrecipescookingtools.R
 import com.example.myapplicationyummlyrecipescookingtools.RelatedActivity
 import kotlinx.android.synthetic.main.activity_ingredients.*
@@ -35,7 +36,7 @@ class IngredientsActivity : AppCompatActivity() {
             startActivity(intent)
         }
         viewMorePipEbby.setOnClickListener {
-            val intent = Intent(this, PipEbbyViewMore::class.java)
+            val intent = Intent(this, PipeEbbyViewMoreActivity::class.java)
 
             startActivity(intent)
         }

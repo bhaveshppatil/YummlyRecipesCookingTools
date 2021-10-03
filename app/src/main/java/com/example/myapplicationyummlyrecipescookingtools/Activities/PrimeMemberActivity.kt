@@ -10,6 +10,5 @@ class PrimeMemberActivity : AppCompatActivity() {
         setContentView(R.layout.activity_prime_member)
         supportActionBar?.hide()
 
-//
     }
 }

@@ -1,21 +1,20 @@
-package com.example.myapplicationyummlyrecipescookingtools
+package com.example.myapplicationyummlyrecipescookingtools.Models
 
-import android.content.Intent
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.myapplicationyummlyrecipescookingtools.Activities.IngredientsActivity
-import com.example.myapplicationyummlyrecipescookingtools.Models.ReceipeModel
 import com.example.myapplicationyummlyrecipescookingtools.Adapter.ViewMoreItemClick
-import com.example.myapplicationyummlyrecipescookingtools.Models.ResponseModel
+import com.example.myapplicationyummlyrecipescookingtools.R
+import com.example.myapplicationyummlyrecipescookingtools.Receipe
+import com.example.myapplicationyummlyrecipescookingtools.RelatedAdapter
+import com.example.myapplicationyummlyrecipescookingtools.RelatedResponse
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import kotlinx.android.synthetic.main.activity_pipe_ebby_view_more.*
-import kotlinx.android.synthetic.main.activity_related.*
+import kotlinx.android.synthetic.main.pipe_ebby_layout.*
 import java.io.InputStream
 
-class RelatedActivity : AppCompatActivity() {
-
+class PipeEbbyViewMoreActivity : AppCompatActivity() {
     private var recipeList= mutableListOf<Receipe>()
     private lateinit var recipeAdapter: RelatedAdapter
 
@@ -25,11 +24,11 @@ class RelatedActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_related)
+        setContentView(R.layout.activity_pipe_ebby_view_more)
 
         recipeAdapter= RelatedAdapter(this,recipeList)
-        recyclerViewInViewMoreRelated.layoutManager= LinearLayoutManager(this)
-        recyclerViewInViewMoreRelated.adapter=recipeAdapter
+        recyclerViewInPipeViewMore.layoutManager= LinearLayoutManager(this)
+        recyclerViewInPipeViewMore.adapter=recipeAdapter
         startBackground()
     }
 
@@ -67,4 +66,5 @@ class RelatedActivity : AppCompatActivity() {
             recipeAdapter.updateData(recipeList)
         }
     }
+
 }

@@ -9,6 +9,8 @@ import kotlinx.android.synthetic.main.fragment_plan.*
 import me.relex.circleindicator.CircleIndicator3
 
 
+
+
 class planFragment : Fragment(R.layout.fragment_plan) {
 
     private var imglist = mutableListOf<Int>()
