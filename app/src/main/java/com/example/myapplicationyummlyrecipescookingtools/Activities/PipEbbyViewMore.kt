@@ -1,22 +1,26 @@
-package com.example.myapplicationyummlyrecipescookingtools
+package com.example.myapplicationyummlyrecipescookingtools.Activities
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.myapplicationyummlyrecipescookingtools.Activities.IngredientsActivity
-import com.example.myapplicationyummlyrecipescookingtools.Models.ReceipeModel
-import com.example.myapplicationyummlyrecipescookingtools.Adapter.ViewMoreItemClick
+import com.example.myapplicationyummlyrecipescookingtools.R
+import com.example.myapplicationyummlyrecipescookingtools.Receipe
+import com.example.myapplicationyummlyrecipescookingtools.RelatedAdapter
 import com.example.myapplicationyummlyrecipescookingtools.Models.ResponseModel
+import com.example.myapplicationyummlyrecipescookingtools.Adapter.ViewMoreItemClick
+import com.example.myapplicationyummlyrecipescookingtools.Models.ReceipeModel
+import com.example.myapplicationyummlyrecipescookingtools.Activities.IngredientsActivity
+import com.example.myapplicationyummlyrecipescookingtools.RelatedResponse
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import kotlinx.android.synthetic.main.activity_related.*
+import kotlinx.android.synthetic.main.pipe_ebby_layout.*
 import java.io.InputStream
 
-class RelatedActivity : AppCompatActivity(), ViewMoreItemClick {
+class PipEbbyViewMore: AppCompatActivity(), ViewMoreItemClick {
 
     private var receipeModelList = mutableListOf<ReceipeModel>()
-    private lateinit var relatedAdapter: RelatedAdapter
+    private lateinit var recipeAdapter: RelatedAdapter
 
     private val runnable = Runnable {
         readJsonFile()
@@ -24,11 +28,13 @@ class RelatedActivity : AppCompatActivity(), ViewMoreItemClick {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_related)
+        setContentView(R.layout.pipe_ebby_layout)
 
-        relatedAdapter = RelatedAdapter(this, receipeModelList, this)
-        recyclerViewInViewMoreRelated.layoutManager = LinearLayoutManager(this)
-        recyclerViewInViewMoreRelated.adapter = relatedAdapter
+        supportActionBar?.hide()
+
+        recipeAdapter= RelatedAdapter(this,receipeModelList, this)
+        recyclerViewPipe.layoutManager= LinearLayoutManager(this)
+        recyclerViewPipe.adapter=recipeAdapter
         startBackground()
     }
 
@@ -61,12 +67,12 @@ class RelatedActivity : AppCompatActivity(), ViewMoreItemClick {
         updateUi()
     }
 
+
     private fun updateUi() {
         runOnUiThread {
-            relatedAdapter.updateData(receipeModelList)
+            recipeAdapter.updateData(receipeModelList)
         }
     }
-
     override fun onItemClick(receipeModel: ReceipeModel) {
 
         val intent = Intent(this, IngredientsActivity::class.java)

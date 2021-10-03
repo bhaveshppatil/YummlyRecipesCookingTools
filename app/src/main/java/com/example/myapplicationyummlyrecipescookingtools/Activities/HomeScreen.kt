@@ -26,8 +26,7 @@ class HomeScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_screen)
 
-  //      val actionBar: ActionBar? = supportActionBar
-//        actionBar!!.hide()
+        supportActionBar?.hide()
 
         tabLayout = findViewById(R.id.tabLayout)
         viewPager = findViewById(R.id.viewPager)

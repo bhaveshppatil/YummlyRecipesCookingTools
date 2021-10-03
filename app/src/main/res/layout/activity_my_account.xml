@@ -1,207 +1,296 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MyAccountActivity">
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:src="@drawable/salad"
-        android:scaleType="centerCrop"
-        android:id="@+id/saladImage"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/ic_arrow"
-        android:scaleType="centerCrop"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:id="@+id/arrowImageInMyAccount"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="My Account"
-        android:textStyle="bold"
-        android:textSize="25dp"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/arrowImageInMyAccount"
-        android:layout_marginTop="100dp"
-        android:layout_marginStart="20dp"/>
 
-    <ScrollView
+    <WebView
+        android:id="@+id/accountWebView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/saladImage">
+        android:visibility="gone"
+        android:layout_height="match_parent" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
+        android:id="@+id/rLayoutFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/saladImage"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/salad"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/black_circle"
-        android:scaleType="centerCrop"
-        android:id="@+id/blackCircle"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+            android:id="@+id/arrowImageInMyAccount"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="R"
-            app:layout_constraintStart_toStartOf="@+id/blackCircle"
-            app:layout_constraintTop_toTopOf="@+id/blackCircle"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:text="My Account"
             android:textColor="@color/white"
-            android:textSize="40dp"
+            android:textSize="25dp"
             android:textStyle="bold"
-            android:layout_marginStart="17dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Reeta Thakur"
-                app:layout_constraintStart_toEndOf="@+id/blackCircle"
-                app:layout_constraintTop_toTopOf="parent"
-                android:textColor="@color/black"
-                android:textSize="25dp"
-                android:textStyle="bold"
-                android:layout_marginStart="25dp"
-                android:layout_marginTop="15dp"/>
-            <View
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/arrowImageInMyAccount" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/view2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/saladImage"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:elevation="12dp"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="1.9"
+            app:cardCornerRadius="40dp">
+
+            <ImageView
+                android:id="@+id/profilePic"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:background="#C1C1C1"
-                android:layout_margin="20dp"
-                app:layout_constraintStart_toStartOf="parent"
-                android:id="@+id/viewSubscription"
-                app:layout_constraintTop_toBottomOf="@+id/blackCircle"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="13dp"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:text="Subscribe now to unlock the full Yummly\nexperience! Get robust personalization tools\nand detailed nutrition info, create custom\nmeal plans, level up your cooking skills, and\more."
-                app:layout_constraintStart_toStartOf="@+id/viewSubscription"
-                app:layout_constraintTop_toTopOf="@+id/viewSubscription"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Skill Level in the Kitchen"
-                android:id="@+id/skillLevel"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/viewSubscription"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/black"
-                android:textSize="15dp"
-                android:textStyle="bold"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:background="#C1C1C1"
-                app:layout_constraintStart_toStartOf="parent"
-                android:id="@+id/viewNotification"
-                app:layout_constraintTop_toBottomOf="@+id/skillLevel"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="15dp"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"
-                android:textStyle="bold"
-                android:id="@+id/notification"
-                android:layout_marginTop="10dp"
-                android:text="Receive Yummly Notifications"
-                app:layout_constraintStart_toStartOf="@+id/viewNotification"
-                app:layout_constraintTop_toTopOf="@+id/viewNotification"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="15dp"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"
-                android:textStyle="bold"
-                android:id="@+id/control"
-                android:layout_marginTop="10dp"
-                android:text="Show Voice Control"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/viewNotification"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:background="#C1C1C1"
-                app:layout_constraintStart_toStartOf="parent"
-                android:id="@+id/viewRecipesImage"
-                app:layout_constraintTop_toBottomOf="@+id/control"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="15dp"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"
-                android:textStyle="bold"
-                android:layout_marginTop="10dp"
-                android:text="Only show Recipes with Images"
-                app:layout_constraintStart_toStartOf="@+id/viewRecipesImage"
-                app:layout_constraintTop_toTopOf="@+id/viewRecipesImage"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="15dp"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"
-                android:textStyle="bold"
-                android:id="@+id/autoplay"
-                android:layout_marginTop="10dp"
-                android:text="Autoplay videos"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/viewRecipesImage"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:background="#C1C1C1"
-                app:layout_constraintStart_toStartOf="parent"
-                android:id="@+id/viewPreference"
-                app:layout_constraintTop_toBottomOf="@+id/autoplay"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="15dp"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"
-                android:textStyle="bold"
-                android:layout_marginTop="10dp"
-                android:text="Manage Email Preferences"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/viewPreference"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="15dp"
-                android:textColor="#218282"
-                android:textStyle="bold"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:text="Deleting Account"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/viewPreference"/>
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icons8_apple_logo_50" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/tvUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saladImage"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/view2"
+            android:fontFamily="@font/capriola"
+            android:text="Username"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/tvUser"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="120dp"
+            android:layout_toEndOf="@id/view2"
+            android:background="@drawable/btnshape"
+            android:drawableEnd="@drawable/icons8_google_50"
+            android:text="Logout"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/subcribeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardBackgroundColor="#FFE4E4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="Subscribe now to unlock the full Yummly experience! Get robust personalization tools and detailed nutrition info, create custom meal plans, level up your cooking skills, and more."
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/learnMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="20dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/learn_more"
+                        android:textColor="#C60707"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/kitchenSkill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/subcribeText"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/capriola"
+                android:text="Skill Level in the Kitchen"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/lLayoutButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/kitchenSkill"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <Button
+                    android:id="@+id/btnBeginner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFE4E4"
+                    android:text="Beginner"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <Space
+                    android:layout_width="10sp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/btnIntermediate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFE4E4"
+                    android:text="Intermediate"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <Space
+                    android:layout_width="10sp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/btnAdvanced"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFE4E4"
+                    android:text="Advanced"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lLayoutButton"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/swYummly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="#FFE4E4"
+                    android:fontFamily="@font/cantora_one"
+                    android:paddingStart="20dp"
+                    android:text="Receive Yummly Notification"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/swVoiceControl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lLayoutButton"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/cantora_one"
+                    android:paddingStart="20dp"
+                    android:text="Show Voice Control"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/swReceipeImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lLayoutButton"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#FFE4E4"
+                    android:fontFamily="@font/cantora_one"
+                    android:paddingStart="20dp"
+                    android:text="Only show receipe with images"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/swAutoplay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lLayoutButton"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/cantora_one"
+                    android:paddingStart="20dp"
+                    android:text="Autoplay videos"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:text="@string/deleteAccInfo"
+                    android:textColor="#38908B" />
+
+                <TextView
+                    android:id="@+id/deleteAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:text="@string/deleteAcc"
+                    android:textColor="#C60707" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
 
     </ScrollView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

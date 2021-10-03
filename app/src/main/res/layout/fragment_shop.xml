@@ -5,10 +5,10 @@
     android:layout_height="match_parent"
     tools:context=".listsshop.ShopFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/planimg"
         android:id="@+id/ivshop"/>
+
 </FrameLayout>

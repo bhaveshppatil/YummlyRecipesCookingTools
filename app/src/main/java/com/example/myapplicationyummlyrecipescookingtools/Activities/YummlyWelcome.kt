@@ -3,7 +3,6 @@ package com.example.myapplicationyummlyrecipescookingtools.Activities
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
-import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplicationyummlyrecipescookingtools.R
 import com.google.firebase.auth.FirebaseAuth
@@ -25,8 +24,7 @@ class YummlyWelcome : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_yummly_welcome)
 
-//        val actionBar: ActionBar? = supportActionBar
-//        actionBar!!.hide()
+        supportActionBar?.hide()
 
         mauth = FirebaseAuth.getInstance()
 

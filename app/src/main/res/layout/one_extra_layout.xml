@@ -1,636 +1,676 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <ImageView
+        android:id="@+id/imageFood"
         android:layout_width="25dp"
         android:layout_height="25dp"
-        app:srcCompat="@drawable/ic_food"
-        android:id="@+id/imageFood"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"/>
+        app:srcCompat="@drawable/ic_food" />
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Check your pantry"
-        app:layout_constraintStart_toEndOf="@+id/imageFood"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="25dp"
-        android:layout_marginStart="20dp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
         android:id="@+id/txtpantry"
-        android:textSize="15dp"/>
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtpantry"
-        android:layout_marginStart="65dp"
-        android:id="@+id/txtLongSentence"
-        android:text="Ingredients in your Virtual Pantry are indicated \nabove Not right? Edit your pantry to add or\nremove items."/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Edit Pantry"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtLongSentence"
-        android:layout_marginTop="15dp"
-        android:layout_marginStart="65dp"
-        android:textColor="#338D6A"
-        android:textStyle="bold"
-        android:id="@+id/txtEditPantry"
-        android:textSize="15dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Directions"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtEditPantry"
-        android:layout_marginTop="15dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Check your pantry"
         android:textColor="@color/black"
+        android:textSize="15dp"
         android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageFood"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtLongSentence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:text="Ingredients in your Virtual Pantry are indicated \nabove Not right? Edit your pantry to add or\nremove items."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtpantry" />
+
+    <TextView
+        android:id="@+id/txtEditPantry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="15dp"
+        android:text="Edit Pantry"
+        android:textColor="#338D6A"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLongSentence" />
+
+    <TextView
         android:id="@+id/txtDirection"
-        android:textSize="20dp"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Directions"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditPantry" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2 Hours"
-        app:layout_constraintStart_toEndOf="@+id/txtDirection"
-        app:layout_constraintTop_toBottomOf="@+id/txtEditPantry"
-        android:layout_marginTop="15dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="2 Hours"
+        android:textSize="20dp"
         android:textStyle="bold"
-        android:textSize="20dp"/>
+        app:layout_constraintStart_toEndOf="@+id/txtDirection"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditPantry" />
+
     <View
+        android:id="@+id/step1View"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_margin="20dp"
-        android:id="@+id/step1View"
+        android:background="#FFF5F5F5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtDirection"
-        android:background="#FFF5F5F5"/>
+        app:layout_constraintTop_toBottomOf="@+id/txtDirection" />
+
     <TextView
+        android:id="@+id/txtStep1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:text="STEP 1"
+        android:textColor="@color/black"
         android:textSize="15dp"
         android:textStyle="bold"
-        android:textColor="@color/black"
-        android:id="@+id/txtStep1"
         app:layout_constraintStart_toStartOf="@+id/step1View"
-        app:layout_constraintTop_toTopOf="@+id/step1View"
-        android:layout_margin="10dp"/>
+        app:layout_constraintTop_toTopOf="@+id/step1View" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
         android:text="SPECIAL EQUIPMENT: KitchenAid Artisan\nStand Mixer with pastry beater attachment...."
         android:textSize="13dp"
         android:textStyle="bold"
-        android:layout_marginBottom="10dp"
         app:layout_constraintStart_toStartOf="@+id/step1View"
-        app:layout_constraintTop_toBottomOf="@+id/txtStep1"
-        android:layout_marginStart="10dp"/>
+        app:layout_constraintTop_toBottomOf="@+id/txtStep1" />
+
     <View
+        android:id="@+id/step2View"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_margin="20dp"
-        android:id="@+id/step2View"
+        android:background="#FFF5F5F5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/step1View"
-        android:background="#FFF5F5F5"/>
+        app:layout_constraintTop_toBottomOf="@+id/step1View" />
+
     <TextView
+        android:id="@+id/txtStep2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:text="STEP 2"
+        android:textColor="@color/black"
         android:textSize="15dp"
         android:textStyle="bold"
-        android:textColor="@color/black"
-        android:id="@+id/txtStep2"
         app:layout_constraintStart_toStartOf="@+id/step2View"
-        app:layout_constraintTop_toTopOf="@+id/step2View"
-        android:layout_margin="10dp"/>
+        app:layout_constraintTop_toTopOf="@+id/step2View" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
         android:text="In a small bowl, whisk together the corntarch,\npowdered sugar, water, egg, lemon,...."
         android:textSize="13dp"
         android:textStyle="bold"
-        android:layout_marginBottom="10dp"
         app:layout_constraintStart_toStartOf="@+id/step2View"
-        app:layout_constraintTop_toBottomOf="@+id/txtStep2"
-        android:layout_marginStart="10dp"/>
+        app:layout_constraintTop_toBottomOf="@+id/txtStep2" />
+
     <View
+        android:id="@+id/step3View"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_margin="20dp"
-        android:id="@+id/step3View"
+        android:background="#FFF5F5F5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/step2View"
-        android:background="#FFF5F5F5"/>
+        app:layout_constraintTop_toBottomOf="@+id/step2View" />
+
     <TextView
+        android:id="@+id/txtStep3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:text="STEP 3"
+        android:textColor="@color/black"
         android:textSize="15dp"
         android:textStyle="bold"
-        android:textColor="@color/black"
-        android:id="@+id/txtStep3"
         app:layout_constraintStart_toStartOf="@+id/step3View"
-        app:layout_constraintTop_toTopOf="@+id/step3View"
-        android:layout_margin="10dp"/>
+        app:layout_constraintTop_toTopOf="@+id/step3View" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
         android:text="Place the mascarpone cheese, parmesan\ncheese,cream cheese, salt, butter, and milk..."
         android:textSize="13dp"
-        android:layout_marginBottom="10dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/step3View"
-        app:layout_constraintTop_toBottomOf="@+id/txtStep3"
-        android:layout_marginStart="10dp"/>
+        app:layout_constraintTop_toBottomOf="@+id/txtStep3" />
+
     <View
+        android:id="@+id/viewMoreView"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_margin="20dp"
-        android:id="@+id/viewMoreView"
+        android:background="#FFF5F5F5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/step3View"
-        android:background="#FFF5F5F5"/>
+        app:layout_constraintTop_toBottomOf="@+id/step3View" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="View More"
-        app:layout_constraintStart_toStartOf="@+id/viewMoreView"
-        app:layout_constraintTop_toTopOf="@+id/viewMoreView"
-        android:textColor="@color/black"
-        android:textStyle="bold"
+        android:layout_marginStart="120dp"
         android:layout_marginTop="13dp"
-        android:layout_marginStart="120dp"/>
+        android:text="View More"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/viewMoreView"
+        app:layout_constraintTop_toTopOf="@+id/viewMoreView" />
+
     <TextView
+        android:id="@+id/txtNutrition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nutrition"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewMoreView"
         android:layout_margin="20dp"
-        android:id="@+id/txtNutrition"
-        android:textSize="20dp"/>
+        android:text="Nutrition"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewMoreView" />
 
     <ImageView
+        android:id="@+id/openLock"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        app:srcCompat="@drawable/ic_open_lock"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="25dp"
         app:layout_constraintStart_toEndOf="@+id/txtNutrition"
         app:layout_constraintTop_toBottomOf="@+id/viewMoreView"
-        android:layout_marginTop="25dp"
-        android:id="@+id/openLock"
-        android:layout_marginStart="150dp"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="View More"
-        android:textSize="13dp"
-        android:textColor="#338D6A"
-        app:layout_constraintStart_toEndOf="@+id/openLock"
-        app:layout_constraintTop_toBottomOf="@+id/viewMoreView"
-        android:layout_marginTop="27dp"
-        android:layout_marginStart="5dp"
-        android:textStyle="bold"/>
+        app:srcCompat="@drawable/ic_open_lock" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Unlock full nutritonal details with subscription"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNutrition"
-        android:layout_marginStart="20dp"
-       android:textSize="15dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="27dp"
+        android:text="View More"
+        android:textColor="#338D6A"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/openLock"
+        app:layout_constraintTop_toBottomOf="@+id/viewMoreView" />
+
+    <TextView
         android:id="@+id/txtSubscription"
-        android:layout_marginTop="10dp"/>
-    <HorizontalScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Unlock full nutritonal details with subscription"
+        android:textSize="15dp"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtNutrition" />
+
+    <HorizontalScrollView
         android:id="@+id/horizontalViewForCircles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtSubscription">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-        <View
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:id="@+id/circleCalories"
-            android:background="@drawable/circle"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginStart="20dp"/>
+
+            <View
+                android:id="@+id/circleCalories"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/circle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="32dp"
                 android:text="   140\nCalories"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="@+id/circleCalories"
-                app:layout_constraintTop_toTopOf="@+id/circleCalories"
-                android:layout_marginTop="32dp"
-                android:layout_marginStart="25dp"/>
+                app:layout_constraintTop_toTopOf="@+id/circleCalories" />
+
             <View
+                android:id="@+id/circleSodium"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:id="@+id/circleSodium"
+                android:layout_marginStart="20dp"
                 android:background="@drawable/circle"
                 app:layout_constraintStart_toEndOf="@+id/circleCalories"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginStart="20dp"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
+                android:id="@+id/sodiumLock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_lock"
-                app:layout_constraintStart_toStartOf="@+id/circleSodium"
-                app:layout_constraintTop_toTopOf="@+id/circleSodium"
                 android:layout_marginStart="38dp"
                 android:layout_marginTop="27dp"
-                android:id="@+id/sodiumLock"/>
+                app:layout_constraintStart_toStartOf="@+id/circleSodium"
+                app:layout_constraintTop_toTopOf="@+id/circleSodium"
+                app:srcCompat="@drawable/ic_lock" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
                 android:text="SODIUM"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="@+id/circleSodium"
-                app:layout_constraintTop_toBottomOf="@+id/sodiumLock"
-                android:layout_marginStart="25dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/sodiumLock" />
+
             <View
+                android:id="@+id/circleFat"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:id="@+id/circleFat"
+                android:layout_marginStart="20dp"
                 android:background="@drawable/circle"
                 app:layout_constraintStart_toEndOf="@+id/circleSodium"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginStart="20dp"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
+                android:id="@+id/fatLock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_lock"
-                app:layout_constraintStart_toStartOf="@+id/circleFat"
-                app:layout_constraintTop_toTopOf="@+id/circleFat"
                 android:layout_marginStart="37dp"
                 android:layout_marginTop="27dp"
-                android:id="@+id/fatLock"/>
+                app:layout_constraintStart_toStartOf="@+id/circleFat"
+                app:layout_constraintTop_toTopOf="@+id/circleFat"
+                app:srcCompat="@drawable/ic_lock" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="37dp"
                 android:text="FAT"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="@+id/circleFat"
-                app:layout_constraintTop_toBottomOf="@+id/fatLock"
-                android:layout_marginStart="37dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/fatLock" />
+
             <View
+                android:id="@+id/circleCarbs"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:id="@+id/circleCarbs"
+                android:layout_marginStart="20dp"
                 android:background="@drawable/circle"
                 app:layout_constraintStart_toEndOf="@+id/circleFat"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginStart="20dp"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
+                android:id="@+id/carbsLock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_lock"
-                app:layout_constraintStart_toStartOf="@+id/circleCarbs"
-                app:layout_constraintTop_toTopOf="@+id/circleCarbs"
                 android:layout_marginStart="37dp"
                 android:layout_marginTop="27dp"
-                android:id="@+id/carbsLock"/>
+                app:layout_constraintStart_toStartOf="@+id/circleCarbs"
+                app:layout_constraintTop_toTopOf="@+id/circleCarbs"
+                app:srcCompat="@drawable/ic_lock" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
                 android:text="CARBS"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="@+id/circleCarbs"
-                app:layout_constraintTop_toBottomOf="@+id/carbsLock"
-                android:layout_marginStart="28dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/carbsLock" />
+
             <View
+                android:id="@+id/circleFiber"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:id="@+id/circleFiber"
+                android:layout_marginStart="20dp"
                 android:background="@drawable/circle"
                 app:layout_constraintStart_toEndOf="@+id/circleCarbs"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginStart="20dp"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
+                android:id="@+id/fiberLock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_lock"
-                app:layout_constraintStart_toStartOf="@+id/circleFiber"
-                app:layout_constraintTop_toTopOf="@+id/circleFiber"
                 android:layout_marginStart="37dp"
                 android:layout_marginTop="27dp"
-                android:id="@+id/fiberLock"/>
+                app:layout_constraintStart_toStartOf="@+id/circleFiber"
+                app:layout_constraintTop_toTopOf="@+id/circleFiber"
+                app:srcCompat="@drawable/ic_lock" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="31dp"
                 android:text="FIBER"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="@+id/circleFiber"
-                app:layout_constraintTop_toBottomOf="@+id/fiberLock"
-                android:layout_marginStart="31dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/fiberLock" />
+
             <View
+                android:id="@+id/circlePotassium"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:id="@+id/circlePotassium"
+                android:layout_marginStart="20dp"
                 android:background="@drawable/circle"
                 app:layout_constraintStart_toEndOf="@+id/circleFiber"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginStart="20dp"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
+                android:id="@+id/potassiumLock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_lock"
-                app:layout_constraintStart_toStartOf="@+id/circlePotassium"
-                app:layout_constraintTop_toTopOf="@+id/circlePotassium"
                 android:layout_marginStart="37dp"
                 android:layout_marginTop="27dp"
-                android:id="@+id/potassiumLock"/>
+                app:layout_constraintStart_toStartOf="@+id/circlePotassium"
+                app:layout_constraintTop_toTopOf="@+id/circlePotassium"
+                app:srcCompat="@drawable/ic_lock" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
                 android:text="POTASSIUM"
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="@+id/circlePotassium"
-                app:layout_constraintTop_toBottomOf="@+id/potassiumLock"
-                android:layout_marginStart="15dp"/>
+                app:layout_constraintTop_toBottomOf="@+id/potassiumLock" />
+
             <View
+                android:id="@+id/circleViewMore"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:id="@+id/circleViewMore"
+                android:layout_marginStart="20dp"
                 android:background="@drawable/black_circle"
                 app:layout_constraintStart_toEndOf="@+id/circlePotassium"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginStart="20dp"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="32dp"
                 android:text=" VIEW\nMORE"
                 android:textColor="@color/white"
                 android:textStyle="bold"
-                android:layout_marginTop="32dp"
                 app:layout_constraintStart_toStartOf="@+id/circleViewMore"
-                app:layout_constraintTop_toTopOf="@+id/circleViewMore"
-                android:layout_marginStart="28dp"/>
+                app:layout_constraintTop_toTopOf="@+id/circleViewMore" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </HorizontalScrollView>
+
     <TextView
+        android:id="@+id/related"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
         android:text="Related"
-        android:textStyle="bold"
         android:textColor="@color/black"
         android:textSize="20dp"
-        android:id="@+id/related"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="20dp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalViewForCircles"/>
+        app:layout_constraintTop_toBottomOf="@+id/horizontalViewForCircles" />
+
     <TextView
+        android:id="@+id/viewMoreRelated"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="View More"
-        android:id="@+id/viewMoreRelated"
-        android:textSize="14dp"
-        android:textColor="#338D6A"
-        app:layout_constraintStart_toEndOf="@+id/related"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalViewForCircles"
-        android:layout_marginTop="35dp"
         android:layout_marginStart="180dp"
-        android:textStyle="bold"/>
+        android:layout_marginTop="35dp"
+        android:text="View More"
+        android:textColor="#338D6A"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/related"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalViewForCircles" />
 
     <HorizontalScrollView
+        android:id="@+id/relatedHorizontalView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scrollbars="none"
-        android:id="@+id/relatedHorizontalView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/related">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
             android:orientation="horizontal">
-        <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="140dp"
-            android:layout_height="140dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitXY"
-            android:src="@drawable/chilirelleno"
-            app:strokeColor="@color/white"
-            app:strokeWidth="7dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:id="@+id/chilirelleno"
-            app:shapeAppearanceOverlay="@style/RoundImage"
-            />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Chili Relleno\nCasserole"
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/chilirelleno"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/chilirelleno"
                 app:layout_constraintStart_toStartOf="parent"
-                android:textSize="17dp"
-                android:textStyle="bold"
-                android:layout_marginStart="5dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                app:strokeColor="@color/white"
+                app:strokeWidth="7dp" />
+
+            <TextView
                 android:id="@+id/txtchili"
-                android:textColor="@color/black"
-                app:layout_constraintTop_toBottomOf="@+id/chilirelleno"/>
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="140dp"
-            android:layout_height="140dp"
-            android:layout_marginStart="15dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitXY"
-            android:src="@drawable/protienbowl"
-            app:shapeAppearanceOverlay="@style/RoundImage"
-            app:strokeColor="@color/white"
-            android:id="@+id/protienbowl"
-            app:layout_constraintStart_toEndOf="@+id/chilirelleno"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_goneMarginStart="20dp"
-            app:strokeWidth="7dp" />
-            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tempeh Protein\nBowl"
+                android:layout_marginStart="5dp"
+                android:text="Chili Relleno\nCasserole"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chilirelleno" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/protienbowl"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="15dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/protienbowl"
                 app:layout_constraintStart_toEndOf="@+id/chilirelleno"
-                android:textSize="17dp"
-                android:textStyle="bold"
-                android:layout_marginStart="25dp"
-                android:textColor="@color/black"
-                app:layout_constraintTop_toBottomOf="@+id/protienbowl"/>
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_goneMarginStart="20dp"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                app:strokeColor="@color/white"
+                app:strokeWidth="7dp" />
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="140dp"
-            android:layout_height="140dp"
-            android:layout_marginStart="15dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitXY"
-            android:src="@drawable/chickenbreast"
-            app:layout_constraintStart_toEndOf="@+id/protienbowl"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_goneMarginStart="20dp"
-            android:id="@+id/chickenbreast"
-            app:shapeAppearanceOverlay="@style/RoundImage"
-            app:strokeColor="@color/white"
-            app:strokeWidth="7dp" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tropical Beef\nChicken Breast"
+                android:layout_marginStart="25dp"
+                android:text="Tempeh Protein\nBowl"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/chilirelleno"
+                app:layout_constraintTop_toBottomOf="@+id/protienbowl" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/chickenbreast"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="15dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/chickenbreast"
                 app:layout_constraintStart_toEndOf="@+id/protienbowl"
-                android:textSize="17dp"
-                android:textStyle="bold"
-                android:layout_marginStart="25dp"
-                android:textColor="@color/black"
-                app:layout_constraintTop_toBottomOf="@+id/chickenbreast"/>
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_goneMarginStart="20dp"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                app:strokeColor="@color/white"
+                app:strokeWidth="7dp" />
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:layout_width="140dp"
-            android:layout_height="140dp"
-            android:layout_marginStart="15dp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitXY"
-            android:id="@+id/beefrice"
-            android:src="@drawable/beefrice"
-            app:layout_constraintStart_toEndOf="@+id/chickenbreast"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_goneMarginStart="20dp"
-            android:layout_marginEnd="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:shapeAppearanceOverlay="@style/RoundImage"
-            app:strokeColor="@color/white"
-            app:strokeWidth="7dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mongolian Beef\nSteamed Rice"
-                app:layout_constraintStart_toEndOf="@+id/chickenbreast"
+                android:layout_marginStart="25dp"
+                android:text="Tropical Beef\nChicken Breast"
+                android:textColor="@color/black"
                 android:textSize="17dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/protienbowl"
+                app:layout_constraintTop_toBottomOf="@+id/chickenbreast" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/beefrice"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginEnd="20dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/beefrice"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/chickenbreast"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_goneMarginStart="20dp"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                app:strokeColor="@color/white"
+                app:strokeWidth="7dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="20dp"
+                android:text="Mongolian Beef\nSteamed Rice"
+                android:textColor="@color/black"
+                android:textSize="17dp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginStart="25dp"
-                android:textColor="@color/black"
-                app:layout_constraintTop_toBottomOf="@+id/beefrice"/>
+                app:layout_constraintStart_toEndOf="@+id/chickenbreast"
+                app:layout_constraintTop_toBottomOf="@+id/beefrice" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </HorizontalScrollView>
+
     <TextView
+        android:id="@+id/pipAndEbby"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
         android:text="More From Pip and Ebby"
-        android:textStyle="bold"
         android:textColor="@color/black"
         android:textSize="20dp"
-        android:id="@+id/pipAndEbby"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="20dp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relatedHorizontalView"/>
+        app:layout_constraintTop_toBottomOf="@+id/relatedHorizontalView" />
+
     <TextView
+        android:id="@+id/viewMorePipEbby"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="View More"
-        android:id="@+id/viewMorePipEbby"
-        android:textSize="14dp"
-        android:textColor="#338D6A"
-        app:layout_constraintStart_toEndOf="@+id/pipAndEbby"
-        app:layout_constraintTop_toBottomOf="@+id/relatedHorizontalView"
-        android:layout_marginTop="35dp"
         android:layout_marginStart="30dp"
-        android:textStyle="bold"/>
+        android:layout_marginTop="35dp"
+        android:text="View More"
+        android:textColor="#338D6A"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/pipAndEbby"
+        app:layout_constraintTop_toBottomOf="@+id/relatedHorizontalView" />
 
     <HorizontalScrollView
+        android:id="@+id/moreFromHorizontalView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scrollbars="none"
-        android:id="@+id/moreFromHorizontalView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pipAndEbby">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
             android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
             android:orientation="horizontal">
+
             <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/greenJuice"
                 android:layout_width="140dp"
                 android:layout_height="140dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
                 android:src="@drawable/greenjuice"
-                app:strokeColor="@color/white"
-                app:strokeWidth="7dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:id="@+id/greenJuice"
                 app:shapeAppearanceOverlay="@style/RoundImage"
-                />
+                app:strokeColor="@color/white"
+                app:strokeWidth="7dp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
                 android:text="Green Juice"
-                app:layout_constraintStart_toStartOf="parent"
+                android:textColor="@color/black"
                 android:textSize="17dp"
                 android:textStyle="bold"
-                android:layout_marginStart="5dp"
-                android:textColor="@color/black"
-                app:layout_constraintTop_toBottomOf="@+id/greenJuice"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/greenJuice" />
 
             <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/swipsteank"
                 android:layout_width="140dp"
                 android:layout_height="140dp"
                 android:layout_marginStart="15dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
                 android:src="@drawable/swipsteank"
-                app:shapeAppearanceOverlay="@style/RoundImage"
-                app:strokeColor="@color/white"
-                android:id="@+id/swipsteank"
                 app:layout_constraintStart_toEndOf="@+id/greenJuice"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_goneMarginStart="20dp"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                app:strokeColor="@color/white"
                 app:strokeWidth="7dp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
                 android:text="Country Swiss\nStreak !"
-                app:layout_constraintStart_toEndOf="@+id/greenJuice"
+                android:textColor="@color/black"
                 android:textSize="17dp"
                 android:textStyle="bold"
-                android:layout_marginStart="25dp"
-                android:textColor="@color/black"
-                app:layout_constraintTop_toBottomOf="@+id/swipsteank"/>
+                app:layout_constraintStart_toEndOf="@+id/greenJuice"
+                app:layout_constraintTop_toBottomOf="@+id/swipsteank" />
 
             <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/cupCake"
                 android:layout_width="140dp"
                 android:layout_height="140dp"
                 android:layout_marginStart="15dp"
@@ -640,72 +680,73 @@
                 app:layout_constraintStart_toEndOf="@+id/swipsteank"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_goneMarginStart="20dp"
-                android:id="@+id/cupCake"
                 app:shapeAppearanceOverlay="@style/RoundImage"
                 app:strokeColor="@color/white"
                 app:strokeWidth="7dp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
                 android:text="Queijadas\nCupCakes"
-                app:layout_constraintStart_toEndOf="@+id/swipsteank"
+                android:textColor="@color/black"
                 android:textSize="17dp"
                 android:textStyle="bold"
-                android:layout_marginStart="25dp"
-                android:textColor="@color/black"
-                app:layout_constraintTop_toBottomOf="@+id/cupCake"/>
+                app:layout_constraintStart_toEndOf="@+id/swipsteank"
+                app:layout_constraintTop_toBottomOf="@+id/cupCake" />
 
             <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/potatoes"
                 android:layout_width="140dp"
                 android:layout_height="140dp"
                 android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                android:id="@+id/potatoes"
                 android:src="@drawable/grilledpotatoes"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/cupCake"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_goneMarginStart="20dp"
-                android:layout_marginEnd="20dp"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:shapeAppearanceOverlay="@style/RoundImage"
                 app:strokeColor="@color/white"
-                app:strokeWidth="7dp"/>
+                app:strokeWidth="7dp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Racon Ranch\nGrilled Potatoes"
-                app:layout_constraintStart_toEndOf="@+id/cupCake"
-                android:textSize="17dp"
+                android:layout_marginStart="25dp"
                 android:layout_marginEnd="20dp"
+                android:text="Racon Ranch\nGrilled Potatoes"
+                android:textColor="@color/black"
+                android:textSize="17dp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginStart="25dp"
-                android:textColor="@color/black"
-                app:layout_constraintTop_toBottomOf="@+id/potatoes"/>
+                app:layout_constraintStart_toEndOf="@+id/cupCake"
+                app:layout_constraintTop_toBottomOf="@+id/potatoes" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </HorizontalScrollView>
 
     <ImageView
+        android:id="@+id/problem"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        app:srcCompat="@drawable/ic_comment"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="30dp"
         android:layout_marginStart="20dp"
-        android:id="@+id/problem"
-        app:layout_constraintTop_toBottomOf="@+id/moreFromHorizontalView"/>
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moreFromHorizontalView"
+        app:srcCompat="@drawable/ic_comment" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="See a problem? Let us know"
-        app:layout_constraintStart_toEndOf="@+id/problem"
-        app:layout_constraintTop_toBottomOf="@+id/moreFromHorizontalView"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="35dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="50dp"
-        android:layout_marginStart="20dp"/>
-
+        android:text="See a problem? Let us know"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/problem"
+        app:layout_constraintTop_toBottomOf="@+id/moreFromHorizontalView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

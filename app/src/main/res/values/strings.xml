@@ -8,5 +8,8 @@
     <string name="facebook_app_id">376736487572437</string>
     <string name="fb_login_protocol_scheme">fb376736487572437</string>
     <string name="thermometerStr">The Yummly wireless meat thermometer sets you up for cooking success. With convenient app-based cooking assistance, timers, and alerts, .</string>
+    <string name="deleteAccInfo">Deleting your account may make your saved recipes, collections, and personalization preferences permanently inaccessible to you and reduce the functionality of connected appliances. Deletions will be performed in accordance with our Privacy Notice and applicable laws or regulations. Delete Account</string>
+    <string name="learn_more"><u>Learn More</u>.</string>
+    <string name="deleteAcc"><u>Delete Account</u>.</string>
 
 </resources>

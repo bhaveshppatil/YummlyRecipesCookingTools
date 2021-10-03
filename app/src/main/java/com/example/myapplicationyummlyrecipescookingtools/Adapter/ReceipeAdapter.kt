@@ -47,6 +47,7 @@ class ReceipeAdapter(
 class ReceipeViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
     val receipeItemView: RelativeLayout = itemView.findViewById(R.id.receipeItemView)
+
     private val tvReceipeName: TextView = itemView.findViewById(R.id.tvReceipeName)
     private val username: TextView = itemView.findViewById(R.id.username)
     private val collection: TextView = itemView.findViewById(R.id.collection)

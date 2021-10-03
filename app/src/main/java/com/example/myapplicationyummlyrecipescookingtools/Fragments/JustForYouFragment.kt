@@ -18,7 +18,6 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.io.InputStream
 
-
 class JustForYouFragment : Fragment(R.layout.fragment_just_for_you), CLickListener {
 
     private var recipeList = mutableListOf<ReceipeModel>()

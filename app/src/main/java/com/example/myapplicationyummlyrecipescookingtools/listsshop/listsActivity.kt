@@ -1,14 +1,12 @@
 package com.example.myapplicationyummlyrecipescookingtools.listsshop
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.viewpager2.widget.ViewPager2
 import com.example.myapplicationyummlyrecipescookingtools.R
 import kotlinx.android.synthetic.main.activity_lists.*
 
 class listsActivity : AppCompatActivity() {
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,10 +23,7 @@ class listsActivity : AppCompatActivity() {
         tvplan.setOnClickListener {
             replaceFragment(planFragment())
         }
-
-
     }
-
 
     private fun replaceFragment(fragment: Fragment) {
         val fragmentManager = supportFragmentManager

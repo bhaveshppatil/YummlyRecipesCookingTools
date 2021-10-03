@@ -6,7 +6,8 @@ import android.view.View
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.myapplicationyummlyrecipescookingtools.*
-
+import com.example.myapplicationyummlyrecipescookingtools.Activities.PreferencesActivity
+import com.example.myapplicationyummlyrecipescookingtools.Activities.PrimeMemberActivity
 
 
 class SettingsFragment : Fragment(R.layout.fragment_thermometer) {
