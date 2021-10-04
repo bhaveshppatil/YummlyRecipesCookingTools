@@ -6,6 +6,12 @@
     android:orientation="vertical"
     tools:context=".Fragments.ProUserFragment">
 
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/proWebView"
+        android:visibility="gone"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/user_recycler_view"
         android:layout_width="match_parent"

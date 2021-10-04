@@ -54,8 +54,7 @@ class SignupActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
 
-        val actionBar: ActionBar? = supportActionBar
-        actionBar!!.hide()
+        supportActionBar?.hide()
 
         callbackManager = CallbackManager.Factory.create()
 

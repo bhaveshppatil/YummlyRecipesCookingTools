@@ -5,8 +5,11 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myapplicationyummlyrecipescookingtools.Activities.IngredientsActivity
+import com.example.myapplicationyummlyrecipescookingtools.Adapter.CLickListener
 import com.example.myapplicationyummlyrecipescookingtools.Models.ReceipeModel
 import com.example.myapplicationyummlyrecipescookingtools.Adapter.ViewMoreItemClick
+import com.example.myapplicationyummlyrecipescookingtools.Adapter.listner
+import com.example.myapplicationyummlyrecipescookingtools.Models.ArticlesModel
 import com.example.myapplicationyummlyrecipescookingtools.Models.ResponseModel
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
@@ -14,9 +17,9 @@ import kotlinx.android.synthetic.main.activity_pipe_ebby_view_more.*
 import kotlinx.android.synthetic.main.activity_related.*
 import java.io.InputStream
 
-class RelatedActivity : AppCompatActivity() {
+class RelatedActivity : AppCompatActivity(), listner{
 
-    private var recipeList= mutableListOf<Receipe>()
+    private var recipeList= mutableListOf<ReceipeModel>()
     private lateinit var recipeAdapter: RelatedAdapter
 
     private val runnable = Runnable {
@@ -27,7 +30,7 @@ class RelatedActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_related)
 
-        recipeAdapter= RelatedAdapter(this,recipeList)
+        recipeAdapter= RelatedAdapter(this,recipeList,this)
         recyclerViewInViewMoreRelated.layoutManager= LinearLayoutManager(this)
         recyclerViewInViewMoreRelated.adapter=recipeAdapter
         startBackground()
@@ -40,7 +43,7 @@ class RelatedActivity : AppCompatActivity() {
 
     private fun readJsonFile() {
         try {
-            var inputStream: InputStream =this.assets.open("recipeDetails.json")
+            var inputStream: InputStream =this.assets.open("receipe.json")
             var data=inputStream.read()
             var builder:StringBuilder= StringBuilder()
             while(data!=-1){
@@ -55,10 +58,10 @@ class RelatedActivity : AppCompatActivity() {
         }
     }
 
-    private fun buildPojoFromJson(json:String) {
-        val type = object : TypeToken<RelatedResponse?>() {}.type
-        val responseModel: RelatedResponse = Gson().fromJson(json, type)
-        recipeList= responseModel.Receipe as MutableList<Receipe>
+    private fun buildPojoFromJson(json: String) {
+        val type = object : TypeToken<ResponseModel?>() {}.type
+        val responseModel: ResponseModel = Gson().fromJson(json, type)
+        recipeList = responseModel.receipe as MutableList<ReceipeModel>
         updateUi()
     }
 
@@ -67,4 +70,15 @@ class RelatedActivity : AppCompatActivity() {
             recipeAdapter.updateData(recipeList)
         }
     }
+
+    override fun onViewMoreItemClick(receipeModel: ReceipeModel) {
+        val intent = Intent(this, IngredientsActivity::class.java)
+        intent.putExtra("image", receipeModel.images)
+        intent.putExtra("ingredient", receipeModel.ingredients)
+        intent.putExtra("calories", receipeModel.calories)
+        intent.putExtra("minutes", receipeModel.minutes)
+        startActivity(intent)
+    }
+
+
 }

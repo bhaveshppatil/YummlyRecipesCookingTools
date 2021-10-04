@@ -17,6 +17,9 @@ public class ProUsersModel implements Serializable {
 	@SerializedName("username")
 	private String username;
 
+	@SerializedName("link")
+	private String link;
+
 	public String getImage(){
 		return image;
 	}
@@ -31,5 +34,9 @@ public class ProUsersModel implements Serializable {
 
 	public String getUsername(){
 		return username;
+	}
+
+	public String getLink(){
+		return link;
 	}
 }
