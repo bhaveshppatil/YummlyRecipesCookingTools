@@ -26,7 +26,6 @@ import retrofit2.http.Url
 import java.io.InputStream
 import java.net.URL
 
-
 class ProUserFragment : Fragment(R.layout.fragment_pro), UserListener {
     private var userModelList = mutableListOf<ProUsersModel>()
     private lateinit var proUserAdapter: ProUserAdapter
@@ -90,10 +89,6 @@ class ProUserFragment : Fragment(R.layout.fragment_pro), UserListener {
         var url: String = proUsersModel.link
         startWebView(url)
     }
-
-
-
-
     private fun startWebView(url: String) {
 
         val settings = webView.settings

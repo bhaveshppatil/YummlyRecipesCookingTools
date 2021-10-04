@@ -31,7 +31,6 @@ class ProUserAdapter(
             userListener.onUserClick(proUsersModel)
         }
     }
-
     override fun getItemCount(): Int {
         return proUsersModelList.size
     }
@@ -49,7 +48,6 @@ class proUserViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     private val username: TextView = itemView.findViewById(R.id.tvUsername)
     private val userProfile: ImageView = itemView.findViewById(R.id.userProfilePic)
     private val userArt: ImageView = itemView.findViewById(R.id.imgUserArt)
-
 
     fun setData(proUsersModel: ProUsersModel) {
         Glide.with(userProfile).load(proUsersModel.userProfile).into(userProfile)

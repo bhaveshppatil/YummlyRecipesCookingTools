@@ -1,0 +1,404 @@
+Index: .idea/kotlinc.xml
+===================================================================
+diff --git a/.idea/kotlinc.xml b/.idea/kotlinc.xml
+deleted file mode 100644
+--- a/.idea/kotlinc.xml	(revision 64c89e608231c1e5270d10866d73e59608294568)
++++ /dev/null	(revision 64c89e608231c1e5270d10866d73e59608294568)
+@@ -1,6 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="Kotlin2JvmCompilerArguments">
+-    <option name="jvmTarget" value="11" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/.gitignore
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+deleted file mode 100644
+--- a/.idea/.gitignore	(revision 64c89e608231c1e5270d10866d73e59608294568)
++++ /dev/null	(revision 64c89e608231c1e5270d10866d73e59608294568)
+@@ -1,3 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+Index: app/src/main/assets/ProUsers.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"ProUsers\": [\r\n    {\r\n      \"image\": \"https://lh3.googleusercontent.com/DhiXyXBsMBGAWAvx8kedDzaKp8eyhWI8dZ1uN1F9OI_gRb4q5YmD1m2sVQkiPyt2fQ4LKJo_cLA5yd6oNv-3iy0=s640-c-rw-v1-e365\",\r\n      \"userProfile\": \"https://s.yumm.ly/profile/cooktoria-profile.jpg\",\r\n      \"caption\": \"Cooktoria\",\r\n      \"username\": \"sweet_kristy\"\r\n    },\r\n    {\r\n      \"image\": \"https://lh3.googleusercontent.com/XaM0ncEZVRJ3PDTSeRwE2ZBIJpgUKGaaXQQS8H_syRm6JmcddnMzmu_Os8-sJ1rEZnhzpwMEqZ_eB5Rt0EPvyA=s640-c-rw-v1-e365\",\r\n      \"userProfile\": \"https://i.pinimg.com/280x280_RS/c1/8c/ca/c18cca2d4bd89549f1b9059ae32303c9.jpg\",\r\n      \"caption\": \"She Wears Many Hats\",\r\n      \"username\": \"kristy_honey\"\r\n    },\r\n    {\r\n      \"image\": \"https://lh3.googleusercontent.com/x8EGzZFKPwJdUeUbg4iclluZAj1JE5mijWB0dmlR_dnaYO7pqLc-jZF224tviVDHJp45Pei2jshUwxS90AhaNH0=s640-c-rw-v1-e365\",\r\n      \"userProfile\": \"https://i.pinimg.com/280x280_RS/1f/70/1a/1f701a5d3d662fba7374c7ee848dd17a.jpg\",\r\n      \"caption\": \"Christina's Cucina\",\r\n      \"username\": \"bubbly_snowflake\"\r\n    },\r\n    {\r\n      \"image\": \"https://lh3.googleusercontent.com/GDqtJgNTFbMPg9QHfEVMp_ap3xY-DtCRqgZtny-NsmhW70RnZR8bPJEdBZYx-q4aRwNIrervDRZiq6QV_V2DZw=s640-c-rw-v1-e365\",\r\n      \"userProfile\": \"https://i.pinimg.com/280x280_RS/36/b0/ec/36b0ec94dd9c65661efbe8dfbe484dec.jpg\",\r\n      \"caption\": \"Recipe Girl\",\r\n      \"username\": \"angelic.princess.kristy\"\r\n    },\r\n    {\r\n      \"image\": \"https://lh3.googleusercontent.com/3Bk1VktNgC7yW6aVFNe1orzfDjnHEKJS1SVVEKzKg-QFPBnTcLavQ_tej2FEIWEAHssbGn3ZX1LlXPMDGUTFLQ=s640-c-rw-v1-e365\",\r\n      \"userProfile\": \"https://i.pinimg.com/280x280_RS/c4/21/16/c42116a39b27e66568e20e3a24079a7f.jpg\",\r\n      \"caption\": \"Laughter And Lemonade\",\r\n      \"username\": \"fairy.princess.kristy\"\r\n    },\r\n    {\r\n      \"image\": \"https://lh3.googleusercontent.com/7sjomC_QWl6E_VgEIM-jtMKcHqXx_vyx3HKwg1ehqU1JzQ4N8FCGIx0HDdHsysFXfycngSJooDDaxEKlYy69=s640-c-rw-v1-e365\",\r\n      \"userProfile\": \"https://i.pinimg.com/280x280_RS/9e/2e/78/9e2e786e45a59ac17009a8384ed70db3.jpg\",\r\n      \"caption\": \"A Simple Pantry\",\r\n      \"username\": \"baby_kristy_butterfly\"\r\n    },\r\n    {\r\n      \"image\": \"https://lh3.googleusercontent.com/N-HJCchP2_UqgB0IijaJtlJAIEWco1hfTnstexd-SfizZlc80VI9enniu2BsGAy6UuG5XxSFcTkCPYmYGl4EjcQ=s640-c-rw-v1-e365\",\r\n      \"userProfile\": \"https://i.pinimg.com/280x280_RS/35/89/93/358993bb63988c985d2fc1b955b9bac4.jpg\",\r\n      \"caption\": \"Spend with Pennies\",\r\n      \"username\": \"Samantha\"\r\n    },\r\n    {\r\n      \"image\": \"https://lh3.googleusercontent.com/JRtOi5JkBKsD0sp0eiOSFM6Q9-U_7gi2rPtYCI0jUjkbYdqq0s51eU4UqtsQtSpMOsKf4HTn8ZbrV79Rl8yG=s640-c-rw-v1-e365\",\r\n      \"userProfile\": \"https://i.pinimg.com/280x280_RS/28/69/63/286963220d191c2b2bb01a5ead540f14.jpg\",\r\n      \"caption\": \"WHAT SHOULD I MAKE FOR\",\r\n      \"username\": \"alishylishy\"\r\n    },\r\n    {\r\n      \"image\": \"https://lh3.googleusercontent.com/nfwrULuzmgogsG5mXY1m_I1_ysZskSCuLrowETl81GtFSeaOMD6ph6yIv2vpUy4WDbBFIBFiFyQc16gkxs0KSg=s640-c-rw-v1-e365\",\r\n      \"userProfile\": \"https://i.pinimg.com/280x280_RS/ae/da/24/aeda246c764df4874b41ab6046f4a9ba.jpg\",\r\n      \"caption\": \"Dream Africa\",\r\n      \"username\": \"Johnson\"\r\n    },\r\n    {\r\n      \"image\": \"https://images.ctfassets.net/3vz37y2qhojh/5ReMp5pE3wNBOweFOVg16r/87944b24c234c944e0e6b7ee72832376/classic_coffee_cake2_hero.jpeg?w=750&fit=fill&fm=webp\",\r\n      \"userProfile\": \"https://images.ctfassets.net/3vz37y2qhojh/6rQRwgHxxCEGQ2EOQi82OQ/a55f89d6db018cf1a267202d27ba2c86/laura-lambert1.jpg?w=128&fit=fill&fm=webp\",\r\n      \"caption\": \"Yummly contributing writer\",\r\n      \"username\": \"Brooklyn\"\r\n    },\r\n    {\r\n      \"image\": \"https://lh3.googleusercontent.com/qAt1vL6F5_zqSAdumocyPLGLc4lo_khCzTBOWzwuijy7SGY2CJ4hzuQimB5cR9zB036PwokbFL7TGxqeL5pZ6TYSCySxusIJlg6X=s640-c-rw-v1-e365\",\r\n      \"userProfile\": \"https://i.pinimg.com/280x280_RS/dc/64/ce/dc64ce7439733ebb08a8fa3595a1c2cf.jpg\",\r\n      \"caption\": \"KROLLS KORNER\",\r\n      \"username\": \"\"\r\n    },\r\n    {\r\n      \"image\": \"https://lh3.googleusercontent.com/LnijZgPyovGjHBDs-Q3iiS4qVlqkUytxtta_DOvH1IKprXDi-nMWK1nEJ-O7X-1NDa93rMXOxFuZwhStdC0ro5c=s640-c-rw-v1-e365\",\r\n      \"userProfile\": \"https://i.pinimg.com/280x280_RS/fb/d4/cc/fbd4cc6ee1d296c2ab8b1ad2d497082e.jpg\",\r\n      \"caption\": \"Yummly\",\r\n      \"username\": \"Victoria\"\r\n    },\r\n    {\r\n      \"image\": \"https://lh3.googleusercontent.com/UWfe_u7fXHl09-D5STqhFG2XDbFiHNXZ7PoBqlPIbtFNBTepEOSqM_bIUixiI0XjOE-gy738H-IHd-9iefqxLw=s640-c-rw-v1-e365\",\r\n      \"userProfile\": \"https://i.pinimg.com/280x280_RS/d2/e3/7d/d2e37d1e84f9df9cd943b6b8d1b7a250.jpg\",\r\n      \"caption\": \"Cook. Craft. Love.\",\r\n      \"username\": \"Alexis\"\r\n    },\r\n    {\r\n      \"image\": \"https://lh3.googleusercontent.com/DDATm1XHy18jD612vs9UfDhvP7TAMyqk6cwRWtejcR4H_QP0ZxkQTePPxwsbL4Dh3Ckj997Ffqcebd4QirTe=s640-c-rw-v1-e365\",\r\n      \"userProfile\": \"https://secureimages.allrecipes.com/userphotos/250x250/8630987.jpg\",\r\n      \"caption\": \"TASTING TABLE\",\r\n      \"username\": \"Gabriella\"\r\n    },\r\n    {\r\n      \"image\": \"https://lh3.googleusercontent.com/POmFCnOoWorSfnnA7j2ljbU7ChPSK0Hc-fLhdGhaL2fu6k2uO7McbBW5dhuoxErudjEnVVynr9B7EEqbJzd2Tw=s640-c-rw-v1-e365\",\r\n      \"userProfile\": \"https://images.media-allrecipes.com/userphotos/5614242.jpg\",\r\n      \"caption\": \"FEED ME PHOEBE\",\r\n      \"username\": \"Charlotte\"\r\n    },\r\n    {\r\n      \"image\": \"https://lh3.googleusercontent.com/Ek5m4pp9CrCB03eQbA2vt10UYavIcDO8vEjIDwAxmYqwKe91YNbU1tCy7wBzw5vkJK4_HOPjtmZxd3F1XQggnA=s640-c-rw-v1-e365\",\r\n      \"userProfile\": \"https://secureimages.allrecipes.com/userphotos/250x250/2267470.jpg\",\r\n      \"caption\": \"REAL FOOD, MOSTLY PLANTS\",\r\n      \"username\": \"Sarah\"\r\n    },\r\n    {\r\n      \"image\": \"https://lh3.googleusercontent.com/B9CH31d3t7yt1IhzgXl-hwpyoEMUqujtsG8LirctTTwku0JqalWnw6FMeC3CZh-r2h3eFqRwWtKMcgHc1K_I-w=s640-c-rw-v1-e365\",\r\n      \"userProfile\": \"https://assets.epicurious.com/photos/61436d538d485f976f6313b2/1:1/w_90,c_limit/Maggie_Hennessy_headshot.jpg\",\r\n      \"caption\": \"REAL FOOD, MOSTLY PLANTS\",\r\n      \"username\": \"Aaliyah\"\r\n    }\r\n  ]\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/assets/ProUsers.json b/app/src/main/assets/ProUsers.json
+--- a/app/src/main/assets/ProUsers.json	(revision 64c89e608231c1e5270d10866d73e59608294568)
++++ b/app/src/main/assets/ProUsers.json	(date 1633327358538)
+@@ -3,104 +3,136 @@
+     {
+       "image": "https://lh3.googleusercontent.com/DhiXyXBsMBGAWAvx8kedDzaKp8eyhWI8dZ1uN1F9OI_gRb4q5YmD1m2sVQkiPyt2fQ4LKJo_cLA5yd6oNv-3iy0=s640-c-rw-v1-e365",
+       "userProfile": "https://s.yumm.ly/profile/cooktoria-profile.jpg",
+-      "caption": "Cooktoria",
+-      "username": "sweet_kristy"
++      "caption": "The Buddhist Chef",
++      "username": "sweet_kristy",
++      "link": "https://www.yummly.com/page/thebuddhistchef"
+     },
+     {
+       "image": "https://lh3.googleusercontent.com/XaM0ncEZVRJ3PDTSeRwE2ZBIJpgUKGaaXQQS8H_syRm6JmcddnMzmu_Os8-sJ1rEZnhzpwMEqZ_eB5Rt0EPvyA=s640-c-rw-v1-e365",
+-      "userProfile": "https://i.pinimg.com/280x280_RS/c1/8c/ca/c18cca2d4bd89549f1b9059ae32303c9.jpg",
+-      "caption": "She Wears Many Hats",
+-      "username": "kristy_honey"
++      "userProfile": "https://i.pinimg.com/280x280_RS/c6/54/44/c65444d9afe3f6768415f2d0998873da.jpg",
++      "caption": "Give Recipe",
++      "username": "kristy_honey",
++      "link": "https://www.yummly.com/page/give-recipe"
++
+     },
+     {
+       "image": "https://lh3.googleusercontent.com/x8EGzZFKPwJdUeUbg4iclluZAj1JE5mijWB0dmlR_dnaYO7pqLc-jZF224tviVDHJp45Pei2jshUwxS90AhaNH0=s640-c-rw-v1-e365",
+       "userProfile": "https://i.pinimg.com/280x280_RS/1f/70/1a/1f701a5d3d662fba7374c7ee848dd17a.jpg",
+       "caption": "Christina's Cucina",
+-      "username": "bubbly_snowflake"
++      "username": "bubbly_snowflake",
++      "link": "https://www.yummly.com/page/christinas-cucina"
++
+     },
+     {
+       "image": "https://lh3.googleusercontent.com/GDqtJgNTFbMPg9QHfEVMp_ap3xY-DtCRqgZtny-NsmhW70RnZR8bPJEdBZYx-q4aRwNIrervDRZiq6QV_V2DZw=s640-c-rw-v1-e365",
+       "userProfile": "https://i.pinimg.com/280x280_RS/36/b0/ec/36b0ec94dd9c65661efbe8dfbe484dec.jpg",
+       "caption": "Recipe Girl",
+-      "username": "angelic.princess.kristy"
++      "username": "angelic.princess.kristy",
++      "link": "https://www.yummly.com/page/recipe-girl"
++
+     },
+     {
+       "image": "https://lh3.googleusercontent.com/3Bk1VktNgC7yW6aVFNe1orzfDjnHEKJS1SVVEKzKg-QFPBnTcLavQ_tej2FEIWEAHssbGn3ZX1LlXPMDGUTFLQ=s640-c-rw-v1-e365",
+       "userProfile": "https://i.pinimg.com/280x280_RS/c4/21/16/c42116a39b27e66568e20e3a24079a7f.jpg",
+-      "caption": "Laughter And Lemonade",
+-      "username": "fairy.princess.kristy"
++      "caption": "She Wears Many Hats",
++      "username": "fairy.princess.kristy",
++      "link": "https://www.yummly.com/page/shewearsmanyhats"
++
+     },
+     {
+       "image": "https://lh3.googleusercontent.com/7sjomC_QWl6E_VgEIM-jtMKcHqXx_vyx3HKwg1ehqU1JzQ4N8FCGIx0HDdHsysFXfycngSJooDDaxEKlYy69=s640-c-rw-v1-e365",
+-      "userProfile": "https://i.pinimg.com/280x280_RS/9e/2e/78/9e2e786e45a59ac17009a8384ed70db3.jpg",
+-      "caption": "A Simple Pantry",
+-      "username": "baby_kristy_butterfly"
++      "userProfile": "https://i.pinimg.com/280x280_RS/82/55/67/8255673ecf35f1f987a1ec7d14ebffa3.jpg",
++      "caption": "Mind Body Soul Food",
++      "username": "baby_kristy_butterfly",
++      "link": "https://www.yummly.com/page/mindbodysoulfood"
++
+     },
+     {
+       "image": "https://lh3.googleusercontent.com/N-HJCchP2_UqgB0IijaJtlJAIEWco1hfTnstexd-SfizZlc80VI9enniu2BsGAy6UuG5XxSFcTkCPYmYGl4EjcQ=s640-c-rw-v1-e365",
+       "userProfile": "https://i.pinimg.com/280x280_RS/35/89/93/358993bb63988c985d2fc1b955b9bac4.jpg",
+-      "caption": "Spend with Pennies",
+-      "username": "Samantha"
++      "caption": "The Mama Report",
++      "username": "Samantha",
++      "link": "https://www.yummly.com/page/themamareport"
++
+     },
+     {
+       "image": "https://lh3.googleusercontent.com/JRtOi5JkBKsD0sp0eiOSFM6Q9-U_7gi2rPtYCI0jUjkbYdqq0s51eU4UqtsQtSpMOsKf4HTn8ZbrV79Rl8yG=s640-c-rw-v1-e365",
+-      "userProfile": "https://i.pinimg.com/280x280_RS/28/69/63/286963220d191c2b2bb01a5ead540f14.jpg",
+-      "caption": "WHAT SHOULD I MAKE FOR",
+-      "username": "alishylishy"
++      "userProfile": "https://i.pinimg.com/280x280_RS/84/b6/f5/84b6f51922b05e2eca0892c3fb589e7a.jpg",
++      "caption": "My Life Cookbook",
++      "username": "alishylishy",
++      "link": "https://www.yummly.com/page/mylifecookbook"
++
+     },
+     {
+       "image": "https://lh3.googleusercontent.com/nfwrULuzmgogsG5mXY1m_I1_ysZskSCuLrowETl81GtFSeaOMD6ph6yIv2vpUy4WDbBFIBFiFyQc16gkxs0KSg=s640-c-rw-v1-e365",
+       "userProfile": "https://i.pinimg.com/280x280_RS/ae/da/24/aeda246c764df4874b41ab6046f4a9ba.jpg",
+       "caption": "Dream Africa",
+-      "username": "Johnson"
++      "username": "Johnson",
++      "link": "https://www.yummly.com/page/thedreamafrica"
++
+     },
+     {
+       "image": "https://images.ctfassets.net/3vz37y2qhojh/5ReMp5pE3wNBOweFOVg16r/87944b24c234c944e0e6b7ee72832376/classic_coffee_cake2_hero.jpeg?w=750&fit=fill&fm=webp",
+-      "userProfile": "https://images.ctfassets.net/3vz37y2qhojh/6rQRwgHxxCEGQ2EOQi82OQ/a55f89d6db018cf1a267202d27ba2c86/laura-lambert1.jpg?w=128&fit=fill&fm=webp",
+-      "caption": "Yummly contributing writer",
+-      "username": "Brooklyn"
++      "userProfile": "https://i.pinimg.com/280x280_RS/08/d8/40/08d8404fa1f5331e5b07d5ad8db697de.jpg",
++      "caption": "Piping Pot Curry",
++      "username": "Brooklyn",
++      "link": "https://www.yummly.com/page/pipingpotcurry"
++
+     },
+     {
+       "image": "https://lh3.googleusercontent.com/qAt1vL6F5_zqSAdumocyPLGLc4lo_khCzTBOWzwuijy7SGY2CJ4hzuQimB5cR9zB036PwokbFL7TGxqeL5pZ6TYSCySxusIJlg6X=s640-c-rw-v1-e365",
+-      "userProfile": "https://i.pinimg.com/280x280_RS/dc/64/ce/dc64ce7439733ebb08a8fa3595a1c2cf.jpg",
+-      "caption": "KROLLS KORNER",
+-      "username": ""
++      "userProfile": "https://i.pinimg.com/280x280_RS/9e/2e/78/9e2e786e45a59ac17009a8384ed70db3.jpg",
++      "caption": "A Simple Pantry",
++      "username": "asimplepantry",
++      "link": "https://www.yummly.com/page/asimplepantry"
++
+     },
+     {
+       "image": "https://lh3.googleusercontent.com/LnijZgPyovGjHBDs-Q3iiS4qVlqkUytxtta_DOvH1IKprXDi-nMWK1nEJ-O7X-1NDa93rMXOxFuZwhStdC0ro5c=s640-c-rw-v1-e365",
+       "userProfile": "https://i.pinimg.com/280x280_RS/fb/d4/cc/fbd4cc6ee1d296c2ab8b1ad2d497082e.jpg",
+       "caption": "Yummly",
+-      "username": "Victoria"
++      "username": "Yummly.com",
++      "link": "https://www.yummly.com/page/yummly"
++
+     },
+     {
+       "image": "https://lh3.googleusercontent.com/UWfe_u7fXHl09-D5STqhFG2XDbFiHNXZ7PoBqlPIbtFNBTepEOSqM_bIUixiI0XjOE-gy738H-IHd-9iefqxLw=s640-c-rw-v1-e365",
+       "userProfile": "https://i.pinimg.com/280x280_RS/d2/e3/7d/d2e37d1e84f9df9cd943b6b8d1b7a250.jpg",
+-      "caption": "Cook. Craft. Love.",
+-      "username": "Alexis"
++      "caption": "She Wears Many Hats",
++      "username": "Alexis",
++      "link": "https://www.yummly.com/page/shewearsmanyhats"
++
+     },
+     {
+       "image": "https://lh3.googleusercontent.com/DDATm1XHy18jD612vs9UfDhvP7TAMyqk6cwRWtejcR4H_QP0ZxkQTePPxwsbL4Dh3Ckj997Ffqcebd4QirTe=s640-c-rw-v1-e365",
+       "userProfile": "https://secureimages.allrecipes.com/userphotos/250x250/8630987.jpg",
+-      "caption": "TASTING TABLE",
+-      "username": "Gabriella"
++      "caption": "Sweet and Savory Meals",
++      "username": "Gabriella",
++      "link": "https://www.yummly.com/page/sweetandsavorymeals"
++
+     },
+     {
+       "image": "https://lh3.googleusercontent.com/POmFCnOoWorSfnnA7j2ljbU7ChPSK0Hc-fLhdGhaL2fu6k2uO7McbBW5dhuoxErudjEnVVynr9B7EEqbJzd2Tw=s640-c-rw-v1-e365",
+-      "userProfile": "https://images.media-allrecipes.com/userphotos/5614242.jpg",
+-      "caption": "FEED ME PHOEBE",
+-      "username": "Charlotte"
++      "userProfile": "https://i.pinimg.com/280x280_RS/f1/56/ab/f156abe2c429a56c188e44b8bf0d4edc.jpg",
++      "caption": "Carrie's Experimental Kitchen",
++      "username": "Charlotte",
++      "link": "https://www.yummly.com/page/carriesexperimentalkitchencom"
++
+     },
+     {
+       "image": "https://lh3.googleusercontent.com/Ek5m4pp9CrCB03eQbA2vt10UYavIcDO8vEjIDwAxmYqwKe91YNbU1tCy7wBzw5vkJK4_HOPjtmZxd3F1XQggnA=s640-c-rw-v1-e365",
+       "userProfile": "https://secureimages.allrecipes.com/userphotos/250x250/2267470.jpg",
+-      "caption": "REAL FOOD, MOSTLY PLANTS",
+-      "username": "Sarah"
++      "caption": "Goodeness Gracious",
++      "username": "Sarah",
++      "link": "https://www.yummly.com/page/goodeness-gracious"
++
+     },
+     {
+       "image": "https://lh3.googleusercontent.com/B9CH31d3t7yt1IhzgXl-hwpyoEMUqujtsG8LirctTTwku0JqalWnw6FMeC3CZh-r2h3eFqRwWtKMcgHc1K_I-w=s640-c-rw-v1-e365",
+       "userProfile": "https://assets.epicurious.com/photos/61436d538d485f976f6313b2/1:1/w_90,c_limit/Maggie_Hennessy_headshot.jpg",
+-      "caption": "REAL FOOD, MOSTLY PLANTS",
+-      "username": "Aaliyah"
++      "caption": "Everyday Dishes",
++      "username": "Aaliyah",
++      "link": "https://www.yummly.com/page/everydaydishes"
+     }
+   ]
+ }
+\ No newline at end of file
+Index: app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>plugins {\r\n    id 'com.android.application'\r\n    id 'kotlin-android'\r\n    id 'kotlin-android-extensions'\r\n    id 'com.google.gms.google-services'\r\n}\r\n\r\nandroid {\r\n    compileSdk 30\r\n\r\n    defaultConfig {\r\n        applicationId \"com.example.myapplicationyummlyrecipescookingtools\"\r\n        minSdk 21\r\n        targetSdk 30\r\n        versionCode 1\r\n        versionName \"1.0\"\r\n\r\n        testInstrumentationRunner \"androidx.test.runner.AndroidJUnitRunner\"\r\n    }\r\n\r\n    buildTypes {\r\n        release {\r\n            minifyEnabled false\r\n            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'\r\n        }\r\n    }\r\n    compileOptions {\r\n        sourceCompatibility JavaVersion.VERSION_1_8\r\n        targetCompatibility JavaVersion.VERSION_1_8\r\n    }\r\n    kotlinOptions {\r\n        jvmTarget = '1.8'\r\n    }\r\n}\r\n\r\ndependencies {\r\n\r\n    implementation 'androidx.core:core-ktx:1.6.0'\r\n    implementation 'androidx.appcompat:appcompat:1.3.1'\r\n    implementation 'com.google.android.material:material:1.4.0'\r\n    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'\r\n    implementation 'com.google.firebase:firebase-auth:21.0.1'\r\n    testImplementation 'junit:junit:4.13.2'\r\n    androidTestImplementation 'androidx.test.ext:junit:1.1.3'\r\n    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'\r\n\r\n    implementation 'com.github.bumptech.glide:glide:4.12.0'\r\n    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'\r\n    implementation(\"org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0\")\r\n\r\n    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'\r\n\r\n\r\n\r\n    // Import the BoM for the Firebase platform\r\n    implementation platform('com.google.firebase:firebase-bom:28.4.1')\r\n\r\n    // Declare the dependency for the Firebase Authentication library\r\n    // When using the BoM, you don't specify versions in Firebase library dependencies\r\n    implementation 'com.google.firebase:firebase-auth-ktx'\r\n    implementation \"androidx.core:core-ktx:1.6.0\"\r\n    implementation \"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version\"\r\n    implementation 'com.google.android.gms:play-services-auth:19.2.0'\r\n\r\n    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'\r\n\r\n\r\n\r\n    implementation 'me.relex:circleindicator:2.1.6'\r\n\r\n\r\n}\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/build.gradle b/app/build.gradle
+--- a/app/build.gradle	(revision 64c89e608231c1e5270d10866d73e59608294568)
++++ b/app/build.gradle	(date 1633283671398)
+@@ -43,15 +43,12 @@
+     testImplementation 'junit:junit:4.13.2'
+     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+-
+     implementation 'com.github.bumptech.glide:glide:4.12.0'
+     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0")
+ 
+     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+ 
+-
+-
+     // Import the BoM for the Firebase platform
+     implementation platform('com.google.firebase:firebase-bom:28.4.1')
+ 
+@@ -63,9 +60,6 @@
+     implementation 'com.google.android.gms:play-services-auth:19.2.0'
+ 
+     implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+-
+-
+-
+     implementation 'me.relex:circleindicator:2.1.6'
+ 
+ 
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DesignSurface\">\r\n    <option name=\"filePathToZoomLevelMap\">\r\n      <map>\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/drawable-v24/dashes.xml\" value=\"0.2203125\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/drawable-v24/ic_launcher_foreground.xml\" value=\"0.2203125\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/drawable/black_circle.xml\" value=\"0.2203125\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/drawable/circle.xml\" value=\"0.2203125\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/drawable/dashes.xml\" value=\"0.2203125\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_about_yummly.xml\" value=\"0.11594202898550725\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_feedback.xml\" value=\"0.11594202898550725\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_home_screen.xml\" value=\"0.20416666666666666\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_ingredients.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_main.xml\" value=\"0.12\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_my_account.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_pipe_ebby_view_more.xml\" value=\"0.20416666666666666\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_preferences.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_prime_member.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_receipe_details.xml\" value=\"0.20416666666666666\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_related.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_setting.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_signup.xml\" value=\"0.20416666666666666\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_thermometer.xml\" value=\"0.20416666666666666\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_vegetarian.xml\" value=\"0.20416666666666666\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_yummly_welcome.xml\" value=\"0.20416666666666666\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/articles_item_layout.xml\" value=\"0.20416666666666666\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/fragment_explore.xml\" value=\"0.20416666666666666\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/fragment_home.xml\" value=\"0.20416666666666666\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/fragment_just_for_you.xml\" value=\"0.20416666666666666\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/fragment_premium.xml\" value=\"0.20416666666666666\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/fragment_thermometer.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/one_extra_layout.xml\" value=\"0.31095890410958904\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/pipe_ebby_layout.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/prouser_item_layout.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/receipe_item_layout.xml\" value=\"0.22\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/recipe_layout.xml\" value=\"1.2023026315789473\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/recipe_view_more_layout.xml\" value=\"0.20416666666666666\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/related_viewmore_layout.xml\" value=\"0.1\" />\r\n        <entry key=\"..\\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/search_item_view.xml\" value=\"0.20416666666666666\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/drawable-v24/dashes.xml\" value=\"0.16\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/drawable/Apple_btn.xml\" value=\"0.25625\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/drawable/apple_btn.xml\" value=\"0.25625\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/drawable/btn_bg.xml\" value=\"0.2703125\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/drawable/btnshape.xml\" value=\"0.25625\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/drawable/button_shape.xml\" value=\"0.2703125\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/drawable/email_btn.xml\" value=\"0.25625\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/drawable/facebook_btn.xml\" value=\"0.25625\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/drawable/google_btn.xml\" value=\"0.25625\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_home_screen.xml\" value=\"0.22962962962962963\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_ingredients.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_lists.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_main.xml\" value=\"0.22962962962962963\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_my_account.xml\" value=\"0.264\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_prime_member.xml\" value=\"0.264\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_receipe_details.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_related.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_signup.xml\" value=\"0.264\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_splash_screen.xml\" value=\"0.22962962962962963\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_thermometer.xml\" value=\"0.264\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_yummly_welcome.xml\" value=\"0.264\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/articles_item_layout.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_home.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_just_for_you.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_pantry.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_plan.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_premium.xml\" value=\"0.264\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_pro.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_profile.xml\" value=\"0.22592592592592592\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_search.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_shop.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_thermometer.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/one_extra_layout.xml\" value=\"0.22962962962962963\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/pipe_ebby_layout.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/prouser_item_layout.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/receipe_item_layout.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/related_item_view.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/related_viewmore_layout.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/search_item_view.xml\" value=\"0.25416666666666665\" />\r\n        <entry key=\"..\\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/menu/bottom_menu.xml\" value=\"0.25364583333333335\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_11\" project-jdk-name=\"1.8\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 64c89e608231c1e5270d10866d73e59608294568)
++++ b/.idea/misc.xml	(date 1633284210803)
+@@ -1,87 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="DesignSurface">
+-    <option name="filePathToZoomLevelMap">
+-      <map>
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/drawable-v24/dashes.xml" value="0.2203125" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2203125" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/drawable/black_circle.xml" value="0.2203125" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/drawable/circle.xml" value="0.2203125" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/drawable/dashes.xml" value="0.2203125" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_about_yummly.xml" value="0.11594202898550725" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_feedback.xml" value="0.11594202898550725" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_home_screen.xml" value="0.20416666666666666" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_ingredients.xml" value="0.1" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_main.xml" value="0.12" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_my_account.xml" value="0.1" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_pipe_ebby_view_more.xml" value="0.20416666666666666" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_preferences.xml" value="0.1" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_prime_member.xml" value="0.1" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_receipe_details.xml" value="0.20416666666666666" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_related.xml" value="0.1" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_setting.xml" value="0.1" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_signup.xml" value="0.20416666666666666" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_thermometer.xml" value="0.20416666666666666" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_vegetarian.xml" value="0.20416666666666666" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/activity_yummly_welcome.xml" value="0.20416666666666666" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/articles_item_layout.xml" value="0.20416666666666666" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/fragment_explore.xml" value="0.20416666666666666" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/fragment_just_for_you.xml" value="0.20416666666666666" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/fragment_premium.xml" value="0.20416666666666666" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/fragment_thermometer.xml" value="0.1" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/one_extra_layout.xml" value="0.31095890410958904" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/pipe_ebby_layout.xml" value="0.1" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/prouser_item_layout.xml" value="0.1" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/receipe_item_layout.xml" value="0.22" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/recipe_layout.xml" value="1.2023026315789473" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/recipe_view_more_layout.xml" value="0.20416666666666666" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/related_viewmore_layout.xml" value="0.1" />
+-        <entry key="..\:/Users/Reeta Thakur/Desktop/YummlyRecipesCookingTools/app/src/main/res/layout/search_item_view.xml" value="0.20416666666666666" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/drawable-v24/dashes.xml" value="0.16" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/drawable/Apple_btn.xml" value="0.25625" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/drawable/apple_btn.xml" value="0.25625" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/drawable/btn_bg.xml" value="0.2703125" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/drawable/btnshape.xml" value="0.25625" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/drawable/button_shape.xml" value="0.2703125" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/drawable/email_btn.xml" value="0.25625" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/drawable/facebook_btn.xml" value="0.25625" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/drawable/google_btn.xml" value="0.25625" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_home_screen.xml" value="0.22962962962962963" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_ingredients.xml" value="0.25416666666666665" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_lists.xml" value="0.25416666666666665" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_main.xml" value="0.22962962962962963" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_my_account.xml" value="0.264" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_prime_member.xml" value="0.264" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_receipe_details.xml" value="0.25416666666666665" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_related.xml" value="0.25416666666666665" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_signup.xml" value="0.264" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_splash_screen.xml" value="0.22962962962962963" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_thermometer.xml" value="0.264" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/activity_yummly_welcome.xml" value="0.264" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/articles_item_layout.xml" value="0.25416666666666665" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_just_for_you.xml" value="0.25416666666666665" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_pantry.xml" value="0.25416666666666665" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_plan.xml" value="0.25416666666666665" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_premium.xml" value="0.264" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_pro.xml" value="0.25416666666666665" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_profile.xml" value="0.22592592592592592" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_search.xml" value="0.25416666666666665" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_shop.xml" value="0.25416666666666665" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/fragment_thermometer.xml" value="0.25416666666666665" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/one_extra_layout.xml" value="0.22962962962962963" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/pipe_ebby_layout.xml" value="0.25416666666666665" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/prouser_item_layout.xml" value="0.25416666666666665" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/receipe_item_layout.xml" value="0.25416666666666665" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/related_item_view.xml" value="0.25416666666666665" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/related_viewmore_layout.xml" value="0.25416666666666665" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/layout/search_item_view.xml" value="0.25416666666666665" />
+-        <entry key="..\:/Users/bhave/Music/Kotlin Projects/Yummly Recipes &amp; Cooking Tools/app/src/main/res/menu/bottom_menu.xml" value="0.25364583333333335" />
+-      </map>
+-    </option>
+-  </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"VcsDirectoryMappings\">\r\n\r\n    <mapping directory=\"$PROJECT_DIR$\" vcs=\"Git\" />\r\n\r\n    <mapping directory=\"\" vcs=\"Git\" />\r\n\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+--- a/.idea/vcs.xml	(revision 64c89e608231c1e5270d10866d73e59608294568)
++++ b/.idea/vcs.xml	(date 1633284210897)
+@@ -1,10 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="VcsDirectoryMappings">
+-
+-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+-
+     <mapping directory="" vcs="Git" />
+-
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"testRunner\" value=\"GRADLE\" />\r\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n\r\n        <option name=\"gradleJvm\" value=\"16\" />\r\n\r\n        <option name=\"gradleJvm\" value=\"11\" />\r\n \r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/app\" />\r\n          </set>\r\n        </option>\r\n        <option name=\"resolveModulePerSourceSet\" value=\"false\" />\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+--- a/.idea/gradle.xml	(revision 64c89e608231c1e5270d10866d73e59608294568)
++++ b/.idea/gradle.xml	(date 1633284925979)
+@@ -7,11 +7,6 @@
+         <option name="testRunner" value="GRADLE" />
+         <option name="distributionType" value="DEFAULT_WRAPPED" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+-
+-        <option name="gradleJvm" value="16" />
+-
+-        <option name="gradleJvm" value="11" />
+- 
+         <option name="modules">
+           <set>
+             <option value="$PROJECT_DIR$" />
+Index: app/src/main/java/com/example/myapplicationyummlyrecipescookingtools/Models/PipeEbbyViewMoreActivity.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.myapplicationyummlyrecipescookingtools.Models\r\n\r\nimport androidx.appcompat.app.AppCompatActivity\r\nimport android.os.Bundle\r\nimport androidx.recyclerview.widget.LinearLayoutManager\r\nimport com.example.myapplicationyummlyrecipescookingtools.Adapter.ViewMoreItemClick\r\nimport com.example.myapplicationyummlyrecipescookingtools.R\r\nimport com.example.myapplicationyummlyrecipescookingtools.Receipe\r\nimport com.example.myapplicationyummlyrecipescookingtools.RelatedAdapter\r\nimport com.example.myapplicationyummlyrecipescookingtools.RelatedResponse\r\nimport com.google.gson.Gson\r\nimport com.google.gson.reflect.TypeToken\r\nimport kotlinx.android.synthetic.main.activity_pipe_ebby_view_more.*\r\nimport kotlinx.android.synthetic.main.pipe_ebby_layout.*\r\nimport java.io.InputStream\r\n\r\nclass PipeEbbyViewMoreActivity : AppCompatActivity() {\r\n    private var recipeList= mutableListOf<Receipe>()\r\n    private lateinit var recipeAdapter: RelatedAdapter\r\n\r\n    private val runnable = Runnable {\r\n        readJsonFile()\r\n    }\r\n\r\n    override fun onCreate(savedInstanceState: Bundle?) {\r\n        super.onCreate(savedInstanceState)\r\n        setContentView(R.layout.activity_pipe_ebby_view_more)\r\n\r\n        recipeAdapter= RelatedAdapter(this,recipeList)\r\n        recyclerViewInPipeViewMore.layoutManager= LinearLayoutManager(this)\r\n        recyclerViewInPipeViewMore.adapter=recipeAdapter\r\n        startBackground()\r\n    }\r\n\r\n    private fun startBackground() {\r\n        val thread = Thread(runnable)\r\n        thread.start()\r\n    }\r\n\r\n    private fun readJsonFile() {\r\n        try {\r\n            var inputStream: InputStream =this.assets.open(\"recipeDetails.json\")\r\n            var data=inputStream.read()\r\n            var builder:StringBuilder= StringBuilder()\r\n            while(data!=-1){\r\n                val ch = data.toChar()\r\n                builder.append(ch)\r\n                data = inputStream.read()\r\n            }\r\n            buildPojoFromJson(builder.toString())\r\n\r\n        }catch (e:Exception){\r\n            e.printStackTrace()\r\n        }\r\n    }\r\n\r\n    private fun buildPojoFromJson(json:String) {\r\n        val type = object : TypeToken<RelatedResponse?>() {}.type\r\n        val responseModel: RelatedResponse = Gson().fromJson(json, type)\r\n        recipeList= responseModel.Receipe as MutableList<Receipe>\r\n        updateUi()\r\n    }\r\n\r\n    private fun updateUi() {\r\n        runOnUiThread {\r\n            recipeAdapter.updateData(recipeList)\r\n        }\r\n    }\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/myapplicationyummlyrecipescookingtools/Models/PipeEbbyViewMoreActivity.kt b/app/src/main/java/com/example/myapplicationyummlyrecipescookingtools/Models/PipeEbbyViewMoreActivity.kt
+--- a/app/src/main/java/com/example/myapplicationyummlyrecipescookingtools/Models/PipeEbbyViewMoreActivity.kt	(revision 64c89e608231c1e5270d10866d73e59608294568)
++++ b/app/src/main/java/com/example/myapplicationyummlyrecipescookingtools/Models/PipeEbbyViewMoreActivity.kt	(date 1633325216367)
+@@ -66,5 +66,4 @@
+             recipeAdapter.updateData(recipeList)
+         }
+     }
+-
+ }
+\ No newline at end of file

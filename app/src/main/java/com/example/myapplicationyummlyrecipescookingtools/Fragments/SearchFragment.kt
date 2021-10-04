@@ -6,6 +6,8 @@ import android.widget.MediaController
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import android.content.Intent
+import com.example.myapplicationyummlyrecipescookingtools.Activities.PrimeMemberActivity
 import com.example.myapplicationyummlyrecipescookingtools.Adapter.SearchAdapter
 import com.example.myapplicationyummlyrecipescookingtools.Adapter.SearchListener
 import com.example.myapplicationyummlyrecipescookingtools.Models.SearchDataModel
@@ -72,8 +74,10 @@ class SearchFragment : Fragment(R.layout.fragment_search), SearchListener {
 
     override fun onSearchItemClick(searchModel: SearchModel) {
 
+        val intent= Intent(context,PrimeMemberActivity::class.java)
         val mediaController: MediaController = MediaController(context)
         videoView.setMediaController(mediaController)
+        startActivity(intent)
 
     }
 }

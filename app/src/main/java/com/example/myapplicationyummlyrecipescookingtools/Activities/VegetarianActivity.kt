@@ -70,8 +70,7 @@ class VegetarianActivity : AppCompatActivity(), VegetarianListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_vegetarian)
 
-        val actionBar: ActionBar? = supportActionBar
-        actionBar!!.hide()
+        supportActionBar?.hide()
 
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view_articles_content)
         articleContentAdapter = ArticleContentAdapter(this, vegetarianModelList, this)
